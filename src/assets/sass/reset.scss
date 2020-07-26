@@ -1,10 +1,22 @@
 * {
-    margin: 0 !important;
-    padding: 0 !important;
     outline: 0 !important;
     box-sizing: border-box !important;
 }
 
 body {
     -webkit-font-smoothing: antialiased !important;
+}
+
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+button {
+    text-transform: none !important;
 }

@@ -2,7 +2,6 @@ import Vue from "vue";
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css";
 import pt from "vuetify/src/locale/pt";
-import "@/assets/sass/reset.scss";
 
 Vue.use(Vuetify);
 

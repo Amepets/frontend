@@ -1,13 +1,14 @@
 <template>
   <div>
-    <h1>Home</h1>
+    <AppBar />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import AppBar from "../components/AppBar.vue";
 
-@Component({})
+@Component({ components: { AppBar } })
 export default class Home extends Vue {}
 </script>
 
