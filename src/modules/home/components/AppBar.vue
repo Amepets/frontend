@@ -18,7 +18,7 @@
               <img
                 width="15px"
                 class="ml-2"
-                src="../../../assets/imgs/home/icon-button.svg"
+                src="../../../assets/imgs/home/icons/icon-button.svg"
               />
             </v-btn>
           </div>
