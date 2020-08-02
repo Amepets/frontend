@@ -10,9 +10,15 @@ jobs:
       - checkout
       - run: npm install
       - run: npm run build
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - ./
   test:
     executor: docker-executor
     steps:
+     - attach_workspace:
+        at: ./
       - checkout
       - run: npm run test:unit
 workflows:
