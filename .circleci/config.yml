@@ -6,8 +6,9 @@ jobs:
   build:
     executor: docker-executor
     steps:
-      - npm install
-      - npm run build
+      - checkout
+      - run: npm install
+      - run: npm run build
   test:
     executor: docker-executor
     steps:
