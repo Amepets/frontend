@@ -93,10 +93,8 @@
     </v-flex>
 
     <v-flex class="w-100 d-flex align-center justify-start grey-variant-four">
-      <div class="informacoes esquerda">
-        <img width="60%" src="../../../assets/imgs/home/img-oque-fazemos-02.png" />
-
-        <div class="mx-10">
+      <div class="informacoes direita">
+        <div class="mr-12">
           <h1 class="mb-3">Inscrição personalizada convallis fusce cras</h1>
           <v-text-field label="Nome" outlined dense></v-text-field>
           <v-text-field label="E-mail" outlined dense></v-text-field>
@@ -109,6 +107,8 @@
             />
           </v-btn>
         </div>
+
+        <img width="60%" src="../../../assets/imgs/home/img-news-desktop.png" />
       </div>
     </v-flex>
 
