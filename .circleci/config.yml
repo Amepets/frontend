@@ -17,7 +17,7 @@ jobs:
   test:
     executor: docker-executor
     steps:
-     - attach_workspace:
+      - attach_workspace:
           at: ./
       - checkout
       - run: npm run test:unit
