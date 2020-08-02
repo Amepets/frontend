@@ -1,17 +1,15 @@
 module.exports = {
-  preset: "@vue/cli-plugin-unit-jest",
-  moduleFileExtensions: ["js", "jsx", "json", "vue"],
+  preset: "@vue/cli-plugin-unit-jest/presets/typescript-and-babel",
+  moduleFileExtensions: ["js", "json", "ts", "vue"],
   transform: {
-    "^.+\\.vue$": "vue-jest",
-    ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$":
-      "jest-transform-stub",
-    "^.+\\.(js|jsx)?$": "babel-jest"
+    "^.+\\.ts$": "ts-jest",
+    ".*\\.(vue)$": "vue-jest"
   },
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1"
   },
-  testMatch: ["<rootDir>/tests/**/*.spec.(js|jsx|ts|tsx)"],
-  snapshotSerializers: ["jest-serializer-vue"],
-
-  transformIgnorePatterns: ["<rootDir>/node_modules/"]
+  testMatch: [
+    "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+  ],
+  snapshotSerializers: ["jest-serializer-vue"]
 };
