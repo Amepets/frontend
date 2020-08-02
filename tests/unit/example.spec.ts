@@ -1,5 +1,5 @@
-describe('HelloWorld.vue', () => {
-  it('test testing', () => {
-    expect(1).toBe(1)
+describe("HelloWorld.vue", () => {
+  it("test testing", () => {
+    expect(1).toBe(1);
   });
 });
