@@ -1,0 +1,19 @@
+version: 2.1
+executer:
+  docker-executor:
+    - image:  circleci/node@3.0.0
+jobs:
+  build:
+    executor: docker-executor
+    steps:
+      - npm install
+      - npm run build
+  test:
+    executor: docker-executor
+    steps:
+      - npm run test
+workflows:
+  build-and-test:
+    jobs:
+      - build
+      - test
