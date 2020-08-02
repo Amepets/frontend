@@ -1,7 +1,8 @@
 version: 2.1
 executors:
   docker-executor:
-    - image:  node
+    docker:
+      - image:  node
 jobs:
   build:
     executor: docker-executor
