@@ -13,6 +13,7 @@ jobs:
   test:
     executor: docker-executor
     steps:
+      - checkout
       - run: npm run test:unit
 workflows:
   build-and-test:
