@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Vue, { VNode } from 'vue';
 
-const suahusha;
 declare global {
   namespace JSX {
     // tslint:disable no-empty-interface
