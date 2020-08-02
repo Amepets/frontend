@@ -1,0 +1,21 @@
+version: 2.1
+executors:
+  docker-executor:
+    docker:
+      - image:  node
+jobs:
+  build:
+    executor: docker-executor
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run build
+  test:
+    executor: docker-executor
+    steps:
+      - run: npm run test:unit
+workflows:
+  build-and-test:
+    jobs:
+      - build
+      - test
