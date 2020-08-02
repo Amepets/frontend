@@ -1,6 +1,12 @@
 <template>
   <div>
-    <v-app-bar elevation="2" color="white" height="auto">
+    <v-app-bar
+      fixed
+      v-if="!this.$vuetify.breakpoint.smAndDown"
+      elevation="2"
+      color="white"
+      height="auto"
+    >
       <v-flex class="w-100 d-flex align-center justify-center">
         <div class="app-bar-conteudo">
           <img width="75px" class="mr-10" src="../../../assets/imgs/logo-apa-black.svg" />
@@ -22,6 +28,16 @@
               />
             </v-btn>
           </div>
+        </div>
+      </v-flex>
+    </v-app-bar>
+    <v-app-bar fixed v-else elevation="2" color="white" height="auto">
+      <v-flex class="w-100 d-flex align-center justify-center">
+        <div class="app-bar-conteudo">
+          <img width="75px" class="mr-10" src="../../../assets/imgs/logo-apa-black.svg" />
+          <v-btn text class="padding-botao">
+            <img class="ml-2" src="../../../assets/imgs/home/icons/icon-menu.svg" />
+          </v-btn>
         </div>
       </v-flex>
     </v-app-bar>
@@ -62,5 +78,9 @@ export default class AppBar extends Vue {}
 
 .app-bar-links a:hover {
   color: var(--v-black-base) !important;
+}
+
+.padding-botao {
+  padding: 0 !important;
 }
 </style>
