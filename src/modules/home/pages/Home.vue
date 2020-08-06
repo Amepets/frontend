@@ -3,10 +3,10 @@
     <AppBar />
 
     <v-flex class="w-100 d-flex align-center justify-center mt-10">
-      <div class="chamada">
+      <div :class="this.$vuetify.breakpoint.xs ? 'chamada wrpa-invertido' : 'chamada' ">
         <div>
           <h1 class="mr-3 mb-3">Em defesa e resgate de animais domésticos em situação de risco</h1>
-          <v-btn rounded color="yellow">
+          <v-btn rounded :block="this.$vuetify.breakpoint.xs" color="yellow">
             Como posso ajudar
             <img
               width="15px"
@@ -16,8 +16,8 @@
           </v-btn>
         </div>
         <img
-          v-if="!this.$vuetify.breakpoint.smAndDown"
-          width="60%"
+          v-if="!this.$vuetify.breakpoint.sm"
+          :width="this.$vuetify.breakpoint.xs ? '100%' : '60%'"
           src="../../../assets/imgs/home/img-home.png"
         />
         <img v-else width="60%" src="../../../assets/imgs/home/img-home-tablet.png" />
@@ -97,9 +97,21 @@
     </v-flex>
 
     <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
-      <div class="chamada my-12 wrpa-normal chamada-tablet">
-        <div>
-          <h1 class="mr-3 mb-3">Adotar é um ato genuíno de amor, faça parte da nossa família.</h1>
+      <div class="chamada my-12 wrpa-invertido chamada-tablet">
+        <v-btn v-if="this.$vuetify.breakpoint.smAndDown" class="mt-8" rounded block color="yellow">
+          Quero adotar um pet
+          <img
+            width="15px"
+            class="ml-2"
+            src="../../../assets/imgs/home/icons/icon-button.svg"
+          />
+        </v-btn>
+        <img
+          :width="!this.$vuetify.breakpoint.smAndDown ? '60%' : '100%'"
+          src="../../../assets/imgs/home/ilustracao-adote-um-amigo.png"
+        />
+        <div :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-7' : ''">
+          <h1 class="mb-3">Adotar é um ato genuíno de amor, faça parte da nossa família.</h1>
           <v-btn v-if="!this.$vuetify.breakpoint.smAndDown" rounded color="yellow">
             Quero adotar um pet
             <img
@@ -109,18 +121,6 @@
             />
           </v-btn>
         </div>
-        <img
-          :width="!this.$vuetify.breakpoint.smAndDown ? '60%' : '100%'"
-          src="../../../assets/imgs/home/ilustracao-adote-um-amigo.png"
-        />
-        <v-btn v-if="this.$vuetify.breakpoint.smAndDown" class="mt-8" rounded block color="yellow">
-          Quero adotar um pet
-          <img
-            width="15px"
-            class="ml-2"
-            src="../../../assets/imgs/home/icons/icon-button.svg"
-          />
-        </v-btn>
       </div>
     </v-flex>
 
@@ -234,6 +234,21 @@ export default class Home extends Vue {}
 
   .wrpa-normal {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .chamada {
+    padding: 40px 10px;
+  }
+
+  .chamada-tablet {
+    padding: 0px 10px;
+  }
+
+  .informacoes-texto {
+    padding: 10px 10px;
+    width: 100%;
   }
 }
 </style>

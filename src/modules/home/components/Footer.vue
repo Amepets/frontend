@@ -3,12 +3,12 @@
     <div class="footer">
       <img class="mb-6" width="75px" src="../../../assets/imgs/logo-apa-black.svg" />
       <div class="footer-conteudo">
-        <div class="mr-12">
+        <div :class="this.$vuetify.breakpoint.xs ? 'mb-5' : 'mr-12'">
           <p class="border-titulos">Contatos</p>
           <p class="mt-3">apauberlandia@gmail.com</p>
           <p>0800 000 0000</p>
         </div>
-        <div class="ml-12">
+        <div :class="this.$vuetify.breakpoint.xs ? '' : 'ml-12'">
           <p class="border-titulos">Páginas</p>
           <v-row>
             <v-col cols="6">
@@ -53,15 +53,28 @@ export default class Footer extends Vue {}
   display: flex;
 }
 
-.footer-conteudo div {
-  flex: 1;
-}
-
 .border-titulos {
   border-bottom: 1px solid var(--v-black-base);
 }
 
 .border-separacao {
   border-top: 1px solid var(--v-black-base);
+}
+
+@media (min-width: 600px) {
+  .footer-conteudo div {
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-conteudo div {
+    width: 100%;
+  }
 }
 </style>
