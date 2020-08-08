@@ -8,7 +8,7 @@ Vue.use(Vuetify);
 export default new Vuetify({
   theme: {
     options: {
-      customProperties: true,
+      customProperties: true
     },
     themes: {
       light: {
@@ -24,15 +24,15 @@ export default new Vuetify({
         green: "#00bc8a",
         pink: "#f15ba2",
         yellow: "#f9dc32",
-        red: "#f62e68",
-      },
-    },
+        red: "#f62e68"
+      }
+    }
   },
   lang: {
     locales: { pt },
-    current: "pt-br",
+    current: "pt-br"
   },
   icons: {
-    iconfont: "md",
-  },
+    iconfont: "md"
+  }
 });
