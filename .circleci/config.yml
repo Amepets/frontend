@@ -34,7 +34,7 @@ jobs:
       - run: aws configure set aws_secret_access_key $SECRET_KEY_AWS
       - run: aws configure set aws_default_region sa-east-1
       - run: aws s3 sync dist/ s3://sanbox-amepet.com --acl public-read
-      - run: aws cloudfront create-invalidation E26KE7Y3BVXMIJ /*
+      - run: aws cloudfront create-invalidation --distribution-id E26KE7Y3BVXMIJ --paths  "/*"
 workflows:
   build-and-test:
     jobs:
