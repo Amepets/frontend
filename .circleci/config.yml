@@ -3,6 +3,9 @@ executors:
   docker-executor:
     docker:
       - image:  node
+  docker-builder:    
+    docker:
+      - image:  python:2-alpine
 jobs:
   build:
     executor: docker-executor
@@ -19,8 +22,15 @@ jobs:
     steps:
       - attach_workspace:
           at: ./
-      - checkout
       - run: npm run test:unit
+  deploy:
+    executor: docker-builder
+    environment:
+    steps:
+      - attach_workspace:
+          at: ./
+      - run: pip install awscli
+      - run: ls 
 workflows:
   build-and-test:
     jobs:
@@ -28,3 +38,10 @@ workflows:
       - test:
           requires: 
             - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: develop
+              
