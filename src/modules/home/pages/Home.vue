@@ -159,8 +159,8 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import AppBar from "../components/AppBar.vue";
-import Footer from "../components/Footer.vue";
+import AppBar from "../../components/AppBar.vue";
+import Footer from "../../components/Footer.vue";
 
 @Component({ components: { AppBar, Footer } })
 export default class Home extends Vue {}
