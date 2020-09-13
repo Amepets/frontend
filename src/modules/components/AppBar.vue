@@ -13,7 +13,9 @@
           <a>Início</a>
           <a>Como posso ajudar</a>
           <a>Adoção</a>
-          <a>Sobre nós</a>
+          <router-link to="/sobreNos">
+            <a>Sobre nós</a>
+          </router-link>
           <a>Eventos</a>
           <a>Loja</a>
         </div>
@@ -29,7 +31,7 @@
   <v-app-bar fixed v-else elevation="2" color="white" height="auto">
     <v-flex class="w-100 d-flex align-center justify-center">
       <div class="app-bar-conteudo">
-        <img width="50px" class="mr-10" src="../../assets/imgs/logo-apa.png" />
+        <img width="50px" class="mr-10" src="../../assets/imgs/logo-apa-black.svg" />
         <div>
           <v-btn rounded color="yellow">
             Ajudar
@@ -42,7 +44,7 @@
                 <img class="mr-n8" src="../../assets/imgs/home/icons/icon-menu.svg" />
               </v-btn>
             </template>
-            <v-list>
+            <v-list class="mt-2 pr-10">
               <p class="ml-2">Início</p>
               <p class="ml-2">Como posso ajudar</p>
               <p class="ml-2">Adoção</p>
