@@ -1,11 +1,16 @@
 <template>
   <div>
     <AppBar />
-
     <v-flex class="w-100 d-flex align-center justify-center mt-10">
-      <div :class="this.$vuetify.breakpoint.xs ? 'chamada wrpa-invertido' : 'chamada' ">
+      <div
+        :class="
+          this.$vuetify.breakpoint.xs ? 'chamada wrpa-invertido' : 'chamada'
+        "
+      >
         <div>
-          <h1 class="mr-3 mb-3">Em defesa e resgate de animais domésticos em situação de risco</h1>
+          <h1 class="mr-3 mb-3">
+            Em defesa e resgate de animais domésticos em situação de risco
+          </h1>
           <v-btn rounded :block="this.$vuetify.breakpoint.xs" color="yellow">
             Como posso ajudar
             <img
@@ -20,18 +25,40 @@
           :width="this.$vuetify.breakpoint.xs ? '100%' : '60%'"
           src="../../../assets/imgs/home/img-home.png"
         />
-        <img v-else width="60%" src="../../../assets/imgs/home/img-home-tablet.png" />
+        <img
+          v-else
+          width="60%"
+          src="../../../assets/imgs/home/img-home-tablet.png"
+        />
       </div>
     </v-flex>
 
     <v-flex class="w-100 d-flex align-center justify-center">
-      <div class="proposito"></div>
+      <div id="proposito" class="proposito">
+        <v-list style="padding: 0px 40px 0px 40px; display: flex; background-color: #49cbfc; margin:0; position: relative;">
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <div class="placeholder" />
+        </v-list>
+      </div>
     </v-flex>
 
     <v-flex class="w-100 d-flex align-center justify-end mb-10">
       <div class="informacoes direita wrpa-invertido">
         <div class="informacoes-texto">
-          <h1 class="mb-3">Uma chamada legal para nosso usuário entrar na página sobre nós</h1>
+          <h1 class="mb-3">
+            Uma chamada legal para nosso usuário entrar na página sobre nós
+          </h1>
           <v-btn text class="padding-botao">
             Conheça nossa história
             <img
@@ -47,15 +74,24 @@
           width="60%"
           src="../../../assets/imgs/home/img-sobre-nos-desktop.png"
         />
-        <img v-else width="100%" src="../../../assets/imgs/home/img-sobre-nos.png" />
+        <img
+          v-else
+          width="100%"
+          src="../../../assets/imgs/home/img-sobre-nos.png"
+        />
       </div>
     </v-flex>
 
     <v-flex class="w-100 d-flex align-center">
-      <img width="100%" src="../../../assets/imgs/home/session-organic-form.svg" />
+      <img
+        width="100%"
+        src="../../../assets/imgs/home/session-organic-form.svg"
+      />
     </v-flex>
 
-    <v-flex class="w-100 d-flex align-center justify-start grey-variant-four pb-6">
+    <v-flex
+      class="w-100 d-flex align-center justify-start grey-variant-four pb-6"
+    >
       <div class="informacoes esquerda wrpa-invertido mt-10">
         <img
           class="mt-6"
@@ -63,23 +99,46 @@
           src="../../../assets/imgs/home/img-oque-fazemos-01.png"
         />
 
-        <div :class=" !this.$vuetify.breakpoint.smAndDown ? 'ml-3' : 'informacoes-texto'">
+        <div
+          :class="
+            !this.$vuetify.breakpoint.smAndDown ? 'ml-3' : 'informacoes-texto'
+          "
+        >
           <h1 class="mb-3">Oque fazemos at nu ugh sotphi lorem ipsum</h1>
-          <p>Plate dui egestas augue euismod curae adipiscing eget pharetra curabitur leo in orci condimentum primis ultricies, hendrerit proin lorem ipsum card be nulok.</p>
+          <p>
+            Plate dui egestas augue euismod curae adipiscing eget pharetra
+            curabitur leo in orci condimentum primis ultricies, hendrerit proin
+            lorem ipsum card be nulok.
+          </p>
         </div>
       </div>
     </v-flex>
 
     <v-flex class="w-100 d-flex align-center justify-end grey-variant-four">
       <div
-        :class="!this.$vuetify.breakpoint.smAndDown ? 'informacoes direita wrpa-normal pb-8' : 'informacoes direita wrpa-normal'"
+        :class="
+          !this.$vuetify.breakpoint.smAndDown
+            ? 'informacoes direita wrpa-normal pb-8'
+            : 'informacoes direita wrpa-normal'
+        "
       >
-        <div :class=" !this.$vuetify.breakpoint.smAndDown ? 'mr-3' : 'informacoes-texto'">
-          <h1 class="mb-3">Numeros de animais que ajudamos vitae primis cras ad curab</h1>
-          <p
-            class="mb-3"
-          >Platea dui egestas augue euismod curae adipiscing eget pharetra curabitur leo in orci condimentum primis ultricies, hendrerit proin</p>
-          <v-btn rounded color="yellow" :block="this.$vuetify.breakpoint.smAndDown">
+        <div
+          :class="
+            !this.$vuetify.breakpoint.smAndDown ? 'mr-3' : 'informacoes-texto'
+          "
+        >
+          <h1 class="mb-3">
+            Numeros de animais que ajudamos vitae primis cras ad curab
+          </h1>
+          <p class="mb-3">
+            Platea dui egestas augue euismod curae adipiscing eget pharetra
+            curabitur leo in orci condimentum primis ultricies, hendrerit proin
+          </p>
+          <v-btn
+            rounded
+            color="yellow"
+            :block="this.$vuetify.breakpoint.smAndDown"
+          >
             Quero ajudar
             <img
               width="15px"
@@ -98,7 +157,13 @@
 
     <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
       <div class="chamada my-12 wrpa-invertido chamada-tablet">
-        <v-btn v-if="this.$vuetify.breakpoint.smAndDown" class="mt-8" rounded block color="yellow">
+        <v-btn
+          v-if="this.$vuetify.breakpoint.smAndDown"
+          class="mt-8"
+          rounded
+          block
+          color="yellow"
+        >
           Quero adotar um pet
           <img
             width="15px"
@@ -111,8 +176,14 @@
           src="../../../assets/imgs/home/ilustracao-adote-um-amigo.png"
         />
         <div :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-7' : ''">
-          <h1 class="mb-3">Adotar é um ato genuíno de amor, faça parte da nossa família.</h1>
-          <v-btn v-if="!this.$vuetify.breakpoint.smAndDown" rounded color="yellow">
+          <h1 class="mb-3">
+            Adotar é um ato genuíno de amor, faça parte da nossa família.
+          </h1>
+          <v-btn
+            v-if="!this.$vuetify.breakpoint.smAndDown"
+            rounded
+            color="yellow"
+          >
             Quero adotar um pet
             <img
               width="15px"
@@ -149,7 +220,12 @@
           width="60%"
           src="../../../assets/imgs/home/img-news-desktop.png"
         />
-        <img class="mb-10" v-else width="100%" src="../../../assets/imgs/home/img-newsletter.png" />
+        <img
+          class="mb-10"
+          v-else
+          width="100%"
+          src="../../../assets/imgs/home/img-newsletter.png"
+        />
       </div>
     </v-flex>
 
@@ -161,12 +237,46 @@
 import { Component, Vue } from "vue-property-decorator";
 import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
+import CarouselCard from "../../components/CarouselCard.vue";
 
-@Component({ components: { AppBar, Footer } })
+window.onload = function(){
+const slider: any = document.getElementById("proposito") ;
+let isDown = false;
+let startX: number;
+let scrollLeft: number;
+slider.addEventListener("mousedown", (e: any) => {
+  isDown = true;
+  slider.classList.add("active");
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener("mouseleave", () => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mouseup", () => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mousemove", (e: any) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = x - startX;
+  slider.scrollLeft = scrollLeft - walk;
+})
+}
+
+@Component({ components: { AppBar, Footer, CarouselCard } })
 export default class Home extends Vue {}
 </script>
 
 <style>
+.placeholder {
+  position: relative;
+  display: block;
+  min-width: 50%;
+}
 .chamada {
   padding: 40px 10px;
   width: 100%;
@@ -178,8 +288,27 @@ export default class Home extends Vue {}
 
 .proposito {
   background-color: var(--v-blue-variant-three-base);
-  padding: 150px;
   width: 100%;
+  padding: 100px 0px 100px 0px;
+  box-sizing: content-box;
+  cursor: grab;
+  overflow: auto;
+
+}
+
+.proposito::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.proposito {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.list {
+  display: flex;
+  position: relative;
+
 }
 
 .informacoes {

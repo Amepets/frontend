@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from "vue-router";
 import Adocao from "../modules/Adocao/pages/Adocao.vue";
 import Home from "../modules/home/pages/Home.vue";
 import SobreNos from "../modules/sobreNos/pages/SobreNos.vue";
+import Ajuda from "../modules/Ajuda/pages/Ajuda.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes: Array<RouteConfig> = [
     path: "/adocao",
     name: "Adocao",
     component: Adocao,
+  },
+  {
+    path: "/Ajuda",
+    name: "Ajuda",
+    component: Ajuda,
   },
 ];
 
