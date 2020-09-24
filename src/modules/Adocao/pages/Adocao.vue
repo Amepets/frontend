@@ -5,13 +5,22 @@
       class="w-100 d-flex align-center justify-center blue-variant-three pb-6"
       style="padding-top: 100px"
     >
-      <div :class="this.$vuetify.breakpoint.smAndDown ? 'chamada wrpa-normal' : 'chamada' ">
+      <div
+        :class="
+          this.$vuetify.breakpoint.smAndDown ? 'chamada wrpa-normal' : 'chamada'
+        "
+      >
         <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
           <h1
-            :class="this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mb-3' "
-          >Lorem ipsum sodales nam morbi enim dui per urna at.</h1>
+            :class="this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mb-3'"
+          >
+            Lorem ipsum sodales nam morbi enim dui per urna at.
+          </h1>
 
-          <div v-if="!this.$vuetify.breakpoint.smAndDown" class="d-flex flex-column botoes">
+          <div
+            v-if="!this.$vuetify.breakpoint.smAndDown"
+            class="d-flex flex-column botoes"
+          >
             <v-btn class="mt-4" rounded color="yellow">
               Quero adotar
               <img
@@ -34,7 +43,10 @@
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/adocao/ilustracao-adocao.svg"
         />
-        <div v-if="this.$vuetify.breakpoint.smAndDown" class="d-flex flex-column botoes">
+        <div
+          v-if="this.$vuetify.breakpoint.smAndDown"
+          class="d-flex flex-column botoes"
+        >
           <v-btn block class="mt-4" rounded color="yellow">
             Quero adotar
             <img
@@ -78,8 +90,10 @@ export default class Adocao extends Vue {}
   justify-content: space-between;
 }
 
-.botoes {
-  width: 50%;
+@media (min-width: 960px) {
+  .botoes {
+    width: 269px !important;
+  }
 }
 
 @media (max-width: 960px) {

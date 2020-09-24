@@ -1,11 +1,5 @@
 <template>
-  <v-app-bar
-    fixed
-    v-if="!this.$vuetify.breakpoint.smAndDown"
-    elevation="2"
-    color="white"
-    height="auto"
-  >
+  <div class="app-bar" v-if="!this.$vuetify.breakpoint.smAndDown">
     <v-flex class="w-100 d-flex align-center justify-center">
       <div class="app-bar-conteudo">
         <img width="50px" class="mr-10" src="../../assets/imgs/logo-apa.png" />
@@ -22,26 +16,41 @@
         <div>
           <v-btn rounded color="yellow">
             Ajudar
-            <img width="15px" class="ml-2" src="../../assets/imgs/home/icons/icon-button.svg" />
+            <img
+              width="15px"
+              class="ml-2"
+              src="../../assets/imgs/home/icons/icon-button.svg"
+            />
           </v-btn>
         </div>
       </div>
     </v-flex>
-  </v-app-bar>
-  <v-app-bar fixed v-else elevation="2" color="white" height="auto">
+  </div>
+  <div class="app-bar" v-else>
     <v-flex class="w-100 d-flex align-center justify-center">
       <div class="app-bar-conteudo">
-        <img width="50px" class="mr-10" src="../../assets/imgs/logo-apa-black.svg" />
+        <img
+          width="50px"
+          class="mr-10"
+          src="../../assets/imgs/logo-apa-black.svg"
+        />
         <div>
           <v-btn rounded color="yellow">
             Ajudar
-            <img width="15px" class="ml-2" src="../../assets/imgs/home/icons/icon-button.svg" />
+            <img
+              width="15px"
+              class="ml-2"
+              src="../../assets/imgs/home/icons/icon-button.svg"
+            />
           </v-btn>
 
           <v-menu offset-y v-if="this.$vuetify.breakpoint.smAndDown">
             <template v-slot:activator="{ on }">
               <v-btn text class="padding-botao" v-on="on">
-                <img class="mr-n8" src="../../assets/imgs/home/icons/icon-menu.svg" />
+                <img
+                  class="mr-n8"
+                  src="../../assets/imgs/home/icons/icon-menu.svg"
+                />
               </v-btn>
             </template>
             <v-list class="mt-2 pr-10">
@@ -54,7 +63,7 @@
         </div>
       </div>
     </v-flex>
-  </v-app-bar>
+  </div>
 </template>
 
 <script lang="ts">
@@ -65,6 +74,15 @@ export default class AppBar extends Vue {}
 </script>
 
 <style>
+.app-bar {
+  box-shadow: 0 2px 3px 0 rgba(16, 16, 16, 0.15);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+}
+
 .app-bar-conteudo {
   padding: 8px 10px;
   width: 100%;
@@ -91,5 +109,17 @@ export default class AppBar extends Vue {}
 
 .app-bar-links a:hover {
   color: var(--v-black-base) !important;
+}
+
+@media (max-width: 960px) {
+  .app-bar-conteudo {
+    padding: 12px 10px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 </style>

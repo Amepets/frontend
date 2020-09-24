@@ -35,7 +35,9 @@
 
     <v-flex class="w-100 d-flex align-center justify-center">
       <div id="proposito" class="proposito">
-        <v-list style="padding: 0px 40px 0px 40px; display: flex; background-color: #49cbfc; margin:0; position: relative;">
+        <v-list
+          style="padding: 0px 40px 0px 40px; display: flex; background-color: #49cbfc; margin:0; position: relative;"
+        >
           <CarouselCard />
           <CarouselCard />
           <CarouselCard />
@@ -239,33 +241,33 @@ import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 import CarouselCard from "../../components/CarouselCard.vue";
 
-window.onload = function(){
-const slider: any = document.getElementById("proposito") ;
-let isDown = false;
-let startX: number;
-let scrollLeft: number;
-slider.addEventListener("mousedown", (e: any) => {
-  isDown = true;
-  slider.classList.add("active");
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener("mouseleave", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mouseup", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mousemove", (e: any) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = x - startX;
-  slider.scrollLeft = scrollLeft - walk;
-})
-}
+window.onload = function() {
+  const slider: any = document.getElementById("proposito");
+  let isDown = false;
+  let startX: number;
+  let scrollLeft: number;
+  slider.addEventListener("mousedown", (e: any) => {
+    isDown = true;
+    slider.classList.add("active");
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+  slider.addEventListener("mouseleave", () => {
+    isDown = false;
+    slider.classList.remove("active");
+  });
+  slider.addEventListener("mouseup", () => {
+    isDown = false;
+    slider.classList.remove("active");
+  });
+  slider.addEventListener("mousemove", (e: any) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = x - startX;
+    slider.scrollLeft = scrollLeft - walk;
+  });
+};
 
 @Component({ components: { AppBar, Footer, CarouselCard } })
 export default class Home extends Vue {}
@@ -293,7 +295,6 @@ export default class Home extends Vue {}
   box-sizing: content-box;
   cursor: grab;
   overflow: auto;
-
 }
 
 .proposito::-webkit-scrollbar {
@@ -302,13 +303,12 @@ export default class Home extends Vue {}
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .proposito {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .list {
   display: flex;
   position: relative;
-
 }
 
 .informacoes {
