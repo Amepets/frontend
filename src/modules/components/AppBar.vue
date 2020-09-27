@@ -8,7 +8,11 @@
   >
     <v-flex class="w-100 d-flex align-center justify-center">
       <div class="app-bar-conteudo">
-        <img width="50px" class="mr-10" src="../../assets/imgs/logo-apa.png" />
+        <img
+          width="50px"
+          class="mr-10"
+          src="../../assets/imgs/logo-apa-black.svg"
+        />
         <div class="mr-10 app-bar-links">
           <a>Início</a>
           <a>Como posso ajudar</a>
@@ -22,7 +26,11 @@
         <div>
           <v-btn rounded color="yellow">
             Ajudar
-            <img width="15px" class="ml-2" src="../../assets/imgs/home/icons/icon-button.svg" />
+            <img
+              width="24px"
+              class="ml-2"
+              src="../../assets/imgs/home/icons/icon-button.svg"
+            />
           </v-btn>
         </div>
       </div>
@@ -31,17 +39,28 @@
   <v-app-bar fixed v-else elevation="2" color="white" height="auto">
     <v-flex class="w-100 d-flex align-center justify-center">
       <div class="app-bar-conteudo">
-        <img width="50px" class="mr-10" src="../../assets/imgs/logo-apa-black.svg" />
+        <img
+          width="50px"
+          class="mr-10"
+          src="../../assets/imgs/logo-apa-black.svg"
+        />
         <div>
           <v-btn rounded color="yellow">
             Ajudar
-            <img width="15px" class="ml-2" src="../../assets/imgs/home/icons/icon-button.svg" />
+            <img
+              width="24px"
+              class="ml-2"
+              src="../../assets/imgs/home/icons/icon-button.svg"
+            />
           </v-btn>
 
           <v-menu offset-y v-if="this.$vuetify.breakpoint.smAndDown">
             <template v-slot:activator="{ on }">
               <v-btn text class="padding-botao" v-on="on">
-                <img class="mr-n8" src="../../assets/imgs/home/icons/icon-menu.svg" />
+                <img
+                  class="mr-n8"
+                  src="../../assets/imgs/home/icons/icon-menu.svg"
+                />
               </v-btn>
             </template>
             <v-list class="mt-2 pr-10">

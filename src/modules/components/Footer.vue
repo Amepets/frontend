@@ -1,9 +1,17 @@
 <template>
   <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
     <div class="footer">
-      <img class="mb-4" width="50px" src="../../assets/imgs/logo-apa.png" />
+      <img
+        class="mb-4"
+        width="50px"
+        src="../../assets/imgs/logo-apa-black.svg"
+      />
       <div
-        :class="this.$vuetify.breakpoint.smAndDown ? 'd-flex justify-space-between  align-end flex-wrap' : 'd-flex justify-space-between  align-end' "
+        :class="
+          this.$vuetify.breakpoint.smAndDown
+            ? 'd-flex justify-space-between  align-end flex-wrap'
+            : 'd-flex justify-space-between  align-end'
+        "
       >
         <div class="flex-grow-1">
           <p class="border-titulos">Contatos</p>
@@ -13,13 +21,19 @@
 
         <div
           v-if="!this.$vuetify.breakpoint.xs"
-          :class="this.$vuetify.breakpoint.smAndDown ? ' flex-grow-0 mr-12' : ' flex-grow-0 mr-12'"
+          :class="
+            this.$vuetify.breakpoint.smAndDown
+              ? ' flex-grow-0 mr-12'
+              : ' flex-grow-0 mr-12'
+          "
         >
           <p class="border-titulos">Páginas</p>
           <div class="d-flex justify-space-between">
             <div
               :class="this.$vuetify.breakpoint.smAndDown ? '' : 'mr-8'"
-              :style="this.$vuetify.breakpoint.smAndDown ? 'margin-right:80px' : ''"
+              :style="
+                this.$vuetify.breakpoint.smAndDown ? 'margin-right:80px' : ''
+              "
             >
               <p>Início</p>
               <p>Como posso ajudar</p>
@@ -60,7 +74,10 @@
         </div>
       </div>
 
-      <div v-if="this.$vuetify.breakpoint.smAndDown" class="d-flex pt-12 border_top">
+      <div
+        v-if="this.$vuetify.breakpoint.smAndDown"
+        class="d-flex pt-12 border_top"
+      >
         <div class="redes_sociais d-flex justify-center align-center mr-5">
           <img src="../../assets/imgs/redesSociais/ic-instagram.svg" />
         </div>

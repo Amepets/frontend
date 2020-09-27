@@ -11,10 +11,15 @@
           <h1 class="mr-3 mb-3">
             Em defesa e resgate de animais domésticos em situação de risco
           </h1>
-          <v-btn rounded :block="this.$vuetify.breakpoint.xs" color="yellow">
+          <v-btn
+            height="56px"
+            rounded
+            :block="this.$vuetify.breakpoint.xs"
+            color="yellow"
+          >
             Como posso ajudar
             <img
-              width="15px"
+              width="24px"
               class="ml-2"
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -35,7 +40,9 @@
 
     <v-flex class="w-100 d-flex align-center justify-center">
       <div id="proposito" class="proposito">
-        <v-list style="padding: 0px 40px 0px 40px; display: flex; background-color: #49cbfc; margin:0; position: relative;">
+        <v-list
+          style="padding: 0px 40px 0px 40px; display: flex; background-color: #49cbfc; margin:0; position: relative;"
+        >
           <CarouselCard />
           <CarouselCard />
           <CarouselCard />
@@ -62,7 +69,7 @@
           <v-btn text class="padding-botao">
             Conheça nossa história
             <img
-              width="15px"
+              width="24px"
               class="ml-1"
               src="../../../assets/imgs/home/icons/icon-link.svg"
             />
@@ -135,13 +142,14 @@
             curabitur leo in orci condimentum primis ultricies, hendrerit proin
           </p>
           <v-btn
+            height="56px"
             rounded
             color="yellow"
             :block="this.$vuetify.breakpoint.smAndDown"
           >
             Quero ajudar
             <img
-              width="15px"
+              width="24px"
               class="ml-2"
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -158,6 +166,7 @@
     <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
       <div class="chamada my-12 wrpa-invertido chamada-tablet">
         <v-btn
+          height="56px"
           v-if="this.$vuetify.breakpoint.smAndDown"
           class="mt-8"
           rounded
@@ -166,7 +175,7 @@
         >
           Quero adotar um pet
           <img
-            width="15px"
+            width="24px"
             class="ml-2"
             src="../../../assets/imgs/home/icons/icon-button.svg"
           />
@@ -180,13 +189,14 @@
             Adotar é um ato genuíno de amor, faça parte da nossa família.
           </h1>
           <v-btn
+            height="56px"
             v-if="!this.$vuetify.breakpoint.smAndDown"
             rounded
             color="yellow"
           >
             Quero adotar um pet
             <img
-              width="15px"
+              width="24px"
               class="ml-2"
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -204,10 +214,10 @@
               <v-text-field label="Nome" outlined dense></v-text-field>
               <v-text-field label="E-mail" outlined dense></v-text-field>
             </v-form>
-            <v-btn rounded color="yellow" block>
+            <v-btn height="56px" rounded color="yellow" block>
               Fique por dentro
               <img
-                width="15px"
+                width="24px"
                 class="ml-2"
                 src="../../../assets/imgs/home/icons/icon-button.svg"
               />
@@ -239,33 +249,33 @@ import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 import CarouselCard from "../../components/CarouselCard.vue";
 
-window.onload = function(){
-const slider: any = document.getElementById("proposito") ;
-let isDown = false;
-let startX: number;
-let scrollLeft: number;
-slider.addEventListener("mousedown", (e: any) => {
-  isDown = true;
-  slider.classList.add("active");
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener("mouseleave", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mouseup", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mousemove", (e: any) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = x - startX;
-  slider.scrollLeft = scrollLeft - walk;
-})
-}
+window.onload = function() {
+  const slider: any = document.getElementById("proposito");
+  let isDown = false;
+  let startX: number;
+  let scrollLeft: number;
+  slider.addEventListener("mousedown", (e: any) => {
+    isDown = true;
+    slider.classList.add("active");
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+  slider.addEventListener("mouseleave", () => {
+    isDown = false;
+    slider.classList.remove("active");
+  });
+  slider.addEventListener("mouseup", () => {
+    isDown = false;
+    slider.classList.remove("active");
+  });
+  slider.addEventListener("mousemove", (e: any) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = x - startX;
+    slider.scrollLeft = scrollLeft - walk;
+  });
+};
 
 @Component({ components: { AppBar, Footer, CarouselCard } })
 export default class Home extends Vue {}
@@ -293,7 +303,6 @@ export default class Home extends Vue {}
   box-sizing: content-box;
   cursor: grab;
   overflow: auto;
-
 }
 
 .proposito::-webkit-scrollbar {
@@ -302,13 +311,12 @@ export default class Home extends Vue {}
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .proposito {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .list {
   display: flex;
   position: relative;
-
 }
 
 .informacoes {

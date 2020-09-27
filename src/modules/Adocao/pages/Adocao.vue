@@ -5,25 +5,47 @@
       class="w-100 d-flex align-center justify-center blue-variant-three pb-6"
       style="padding-top: 100px"
     >
-      <div :class="this.$vuetify.breakpoint.smAndDown ? 'chamada wrpa-normal' : 'chamada' ">
+      <div
+        :class="
+          this.$vuetify.breakpoint.smAndDown ? 'chamada wrpa-normal' : 'chamada'
+        "
+      >
         <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
           <h1
-            :class="this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mb-3' "
-          >Lorem ipsum sodales nam morbi enim dui per urna at.</h1>
+            :class="this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mb-3'"
+          >
+            Lorem ipsum sodales nam morbi enim dui per urna at.
+          </h1>
 
-          <div v-if="!this.$vuetify.breakpoint.smAndDown" class="d-flex flex-column botoes">
-            <v-btn class="mt-4" rounded color="yellow">
+          <div
+            v-if="!this.$vuetify.breakpoint.smAndDown"
+            class="d-flex flex-column botoes"
+          >
+            <v-btn
+              width="268px"
+              height="56px"
+              class="mt-4"
+              rounded
+              color="yellow"
+            >
               Quero adotar
               <img
-                width="15px"
+                width="24px"
                 class="ml-2"
                 src="../../../assets/imgs/home/icons/icon-button.svg"
               />
             </v-btn>
-            <v-btn class="mt-4" outlined rounded color="white">
+            <v-btn
+              height="56px"
+              width="268px"
+              class="mt-4"
+              outlined
+              rounded
+              color="white"
+            >
               Quero apadrinhar
               <img
-                width="15px"
+                width="24px"
                 class="ml-2"
                 src="../../../assets/imgs/icon-button-white.svg"
               />
@@ -34,19 +56,29 @@
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/adocao/ilustracao-adocao.svg"
         />
-        <div v-if="this.$vuetify.breakpoint.smAndDown" class="d-flex flex-column botoes">
-          <v-btn block class="mt-4" rounded color="yellow">
+        <div
+          v-if="this.$vuetify.breakpoint.smAndDown"
+          class="d-flex flex-column botoes"
+        >
+          <v-btn height="56px" block class="mt-4" rounded color="yellow">
             Quero adotar
             <img
-              width="15px"
+              width="24px"
               class="ml-2"
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
           </v-btn>
-          <v-btn block class="mt-4" outlined rounded color="white">
+          <v-btn
+            height="56px"
+            block
+            class="mt-4"
+            outlined
+            rounded
+            color="white"
+          >
             Quero apadrinhar
             <img
-              width="15px"
+              width="24px"
               class="ml-2"
               src="../../../assets/imgs/icon-button-white.svg"
             />
