@@ -14,9 +14,9 @@
           src="../../assets/imgs/logo-apa-black.svg"
         />
         <div class="mr-10 app-bar-links">
-          <a>Início</a>
-          <a>Como posso ajudar</a>
-          <a>Adoção</a>
+          <router-link to="/"><a>Início</a></router-link>
+          <router-link to="/ajuda"><a>Como posso ajudar</a></router-link>
+          <router-link to="/adocao"><a>Adoção</a></router-link>
           <router-link to="/sobreNos">
             <a>Sobre nós</a>
           </router-link>

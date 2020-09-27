@@ -12,6 +12,7 @@
             Em defesa e resgate de animais domésticos em situação de risco
           </h1>
           <v-btn
+            width="268px"
             height="56px"
             rounded
             :block="this.$vuetify.breakpoint.xs"
@@ -142,6 +143,7 @@
             curabitur leo in orci condimentum primis ultricies, hendrerit proin
           </p>
           <v-btn
+            width="268px"
             height="56px"
             rounded
             color="yellow"
@@ -189,12 +191,13 @@
             Adotar é um ato genuíno de amor, faça parte da nossa família.
           </h1>
           <v-btn
+            width="365px"
             height="56px"
             v-if="!this.$vuetify.breakpoint.smAndDown"
             rounded
             color="yellow"
           >
-            Quero adotar um pet
+            Quero adotar
             <img
               width="24px"
               class="ml-2"
@@ -214,7 +217,7 @@
               <v-text-field label="Nome" outlined dense></v-text-field>
               <v-text-field label="E-mail" outlined dense></v-text-field>
             </v-form>
-            <v-btn height="56px" rounded color="yellow" block>
+            <v-btn width="365px" height="56px" rounded color="yellow" block>
               Fique por dentro
               <img
                 width="24px"
