@@ -21,6 +21,7 @@
             v-if="!this.$vuetify.breakpoint.smAndDown"
             class="d-flex flex-column botoes"
           >
+
             <v-btn
               width="268px"
               height="56px"
@@ -28,6 +29,7 @@
               rounded
               color="yellow"
             >
+
               Quero adotar
               <img
                 width="24px"
@@ -60,7 +62,9 @@
           v-if="this.$vuetify.breakpoint.smAndDown"
           class="d-flex flex-column botoes"
         >
+
           <v-btn height="56px" block class="mt-4" rounded color="yellow">
+
             Quero adotar
             <img
               width="24px"
@@ -114,8 +118,10 @@ export default class Adocao extends Vue {
   justify-content: space-between;
 }
 
-.botoes {
-  width: 50%;
+@media (min-width: 960px) {
+  .botoes {
+    width: 269px !important;
+  }
 }
 
 @media (max-width: 960px) {

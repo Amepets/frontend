@@ -2,7 +2,11 @@
   <div>
     <AppBar />
 
-    <v-flex class="w-100 d-flex align-center justify-center mt-10">
+
+    <v-flex
+      class="w-100 d-flex align-center justify-center"
+      style="margin-top: 80px"
+    >
       <div
         :class="
           this.$vuetify.breakpoint.smAndDown
@@ -56,6 +60,7 @@
           <v-btn
             width="268px"
             height="56px"
+
             v-if="!this.$vuetify.breakpoint.smAndDown"
             class="mt-4"
             rounded
@@ -249,7 +254,10 @@
     <v-flex class="w-100 d-flex align-center justify-center">
       <div
         :class="
-          this.$vuetify.breakpoint.smAndDown ? 'chamada wrpa-normal' : 'chamada'
+
+          this.$vuetify.breakpoint.smAndDown
+            ? 'chamada wrpa-normal'
+            : 'chamada mt-16 mb-10'
         "
       >
         <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
