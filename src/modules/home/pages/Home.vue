@@ -33,29 +33,32 @@
         />
       </div>
     </v-flex>
-
-    <v-flex class="w-100 d-flex align-center justify-center">
-      <div id="proposito" class="proposito">
-        <v-list
-          style="padding: 0px 40px 0px 40px; display: flex; background-color: #49cbfc; margin:0; position: relative;"
-        >
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <CarouselCard @click.native="scrollToTarget" />
-          <div class="placeholder" />
-        </v-list>
-      </div>
-    </v-flex>
-
+    <div class="titlebox">
+      <h1>Propósito platea neque</h1>
+      <h1>euismod ligula felis sapien</h1>
+      <h1>fermentum fames.A</h1>
+      <v-flex class="w-100 d-flex align-center justify-center ">
+        <div id="proposito" class="proposito">
+          <v-list
+            style="padding: 0px 40px 0px 40px; display: flex; background-color: #49cbfc; margin:0; position: relative;"
+          >
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <CarouselCard />
+            <div class="placeholder" />
+          </v-list>
+        </div>
+      </v-flex>
+    </div>
     <v-flex class="w-100 d-flex align-center justify-end mb-10">
       <div class="informacoes direita wrpa-invertido">
         <div class="informacoes-texto">
@@ -274,15 +277,6 @@ window.onload = function() {
 @Component({ components: { AppBar, Footer, CarouselCard } })
 export default class Home extends Vue {
   // eslint-disable-next-line class-methods-use-this
-  scrollToTarget(e: any) {
-    const $container: any = document.getElementById("proposito");
-    const $scrollTo: any = e.target;
-    $container.scrollTo({
-      top: 0,
-      left: $scrollTo.offsetLeft - 20,
-      behavior: "smooth"
-    });
-  }
 }
 </script>
 
@@ -304,12 +298,30 @@ export default class Home extends Vue {
 .proposito {
   background-color: var(--v-blue-variant-three-base);
   width: 100%;
-  padding: 100px 0px 100px 0px;
+  padding: 30px 0px 30px 0px;
   box-sizing: content-box;
   cursor: grab;
   overflow: auto;
+  position: relative;
 }
 
+.titlebox {
+  background-color: var(--v-blue-variant-three-base);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.titlebox h1 {
+  font-family: Helvetica;
+  font-size: 40px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: black;
+  padding-left: 40px;
+}
 .proposito::-webkit-scrollbar {
   display: none;
 }
@@ -391,6 +403,15 @@ export default class Home extends Vue {
   .informacoes-texto {
     padding: 10px 10px;
     width: 100%;
+  }
+
+  .titlebox h1 {
+    font-size: 32px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
   }
 }
 </style>
