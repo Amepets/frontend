@@ -33,7 +33,7 @@
             >
               <div class="button-wrapper">
                 <img
-                  width="15px"
+                  width="24px"
                   class="mb-2"
                   src="../../../assets/imgs/ajuda/ic-donation-money.svg"
                 />
@@ -52,7 +52,7 @@
             >
               <div class="button-wrapper">
                 <img
-                  width="15px"
+                  width="24px"
                   class="mb-2"
                   src="../../../assets/imgs/ajuda/ic-donation-medicine.svg"
                 />
@@ -71,7 +71,7 @@
             >
               <div class="button-wrapper">
                 <img
-                  width="15px"
+                  width="24px"
                   class="mb-2"
                   src="../../../assets/imgs/ajuda/ic-voluntery.svg"
                 />
@@ -101,7 +101,7 @@
           >
             <div class="button-wrapper">
               <img
-                width="15px"
+                width="24px"
                 class="mb-2"
                 src="../../../assets/imgs/ajuda/ic-donation-money.svg"
               />
@@ -120,7 +120,7 @@
           >
             <div class="button-wrapper">
               <img
-                width="15px"
+                width="24px"
                 class="mb-2"
                 src="../../../assets/imgs/ajuda/ic-donation-medicine.svg"
               />
@@ -139,7 +139,7 @@
           >
             <div class="button-wrapper">
               <img
-                width="15px"
+                width="24px"
                 class="mb-2"
                 src="../../../assets/imgs/ajuda/ic-voluntery.svg"
               />
@@ -160,7 +160,11 @@ import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 
 @Component({ components: { AppBar, Footer } })
-export default class Ajuda extends Vue {}
+export default class Ajuda extends Vue {
+  public created() {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  }
+}
 </script>
 
 <style>

@@ -1,32 +1,46 @@
 <template>
   <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
     <div class="footer">
-      <img class="mb-4" width="50px" src="../../assets/imgs/logo-apa.png" />
+      <img
+        class="mb-4"
+        width="50px"
+        src="../../assets/imgs/logo-apa-black.svg"
+      />
       <div
-        :class="this.$vuetify.breakpoint.smAndDown ? 'd-flex justify-space-between  align-end flex-wrap' : 'd-flex justify-space-between  align-end' "
+        :class="
+          this.$vuetify.breakpoint.smAndDown
+            ? 'd-flex justify-space-between  align-end flex-wrap'
+            : 'd-flex justify-space-between  align-end'
+        "
       >
         <div class="flex-grow-1">
-          <p class="border-titulos">Contatos</p>
+          <p class="border-titulos font-weight-bold">Contatos</p>
           <p>apauberlandia@gmail.com</p>
           <p>0800 000 0000</p>
         </div>
 
         <div
           v-if="!this.$vuetify.breakpoint.xs"
-          :class="this.$vuetify.breakpoint.smAndDown ? ' flex-grow-0 mr-12' : ' flex-grow-0 mr-12'"
+          :class="
+            this.$vuetify.breakpoint.smAndDown
+              ? ' flex-grow-0 mr-12'
+              : ' flex-grow-0 mr-12'
+          "
         >
-          <p class="border-titulos">Páginas</p>
+          <p class="border-titulos font-weight-bold">Páginas</p>
           <div class="d-flex justify-space-between">
             <div
               :class="this.$vuetify.breakpoint.smAndDown ? '' : 'mr-8'"
-              :style="this.$vuetify.breakpoint.smAndDown ? 'margin-right:80px' : ''"
+              :style="
+                this.$vuetify.breakpoint.smAndDown ? 'margin-right:80px' : ''
+              "
             >
-              <p>Início</p>
-              <p>Como posso ajudar</p>
+              <p><router-link to="/">Início</router-link></p>
+              <p><router-link to="/ajuda">Como posso ajudar</router-link></p>
             </div>
             <div>
-              <p>Adoção</p>
-              <p>Sobre nós</p>
+              <p><router-link to="/adocao">Adoção</router-link></p>
+              <p><router-link to="/sobreNos">Sobre nós</router-link></p>
             </div>
           </div>
         </div>
@@ -51,16 +65,19 @@
       </div>
 
       <div v-if="this.$vuetify.breakpoint.xs" class="border_top pt-6">
-        <p class="border-titulos">Páginas</p>
+        <p class="border-titulos font-weight-bold">Páginas</p>
         <div>
-          <p>Início</p>
-          <p>Como posso ajudar</p>
-          <p>Adoção</p>
-          <p>Sobre nós</p>
+          <p><router-link to="/">Início</router-link></p>
+          <p><router-link to="/ajuda">Como posso ajudar</router-link></p>
+          <p><router-link to="/adocao">Adoção</router-link></p>
+          <p><router-link to="/sobreNos">Sobre nós</router-link></p>
         </div>
       </div>
 
-      <div v-if="this.$vuetify.breakpoint.smAndDown" class="d-flex pt-12 border_top">
+      <div
+        v-if="this.$vuetify.breakpoint.smAndDown"
+        class="d-flex pt-12 border_top"
+      >
         <div class="redes_sociais d-flex justify-center align-center mr-5">
           <img src="../../assets/imgs/redesSociais/ic-instagram.svg" />
         </div>
@@ -101,6 +118,6 @@ export default class Footer extends Vue {}
 
 .border_top {
   margin-top: 30px;
-  border-top: 1px solid #101010;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 </style>
