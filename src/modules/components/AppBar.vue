@@ -20,7 +20,6 @@
             Ajudar
             <img
               width="24px"
-
               class="ml-2"
               src="../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -41,9 +40,7 @@
           <v-btn rounded color="yellow">
             Ajudar
             <img
-
               width="24px"
-
               class="ml-2"
               src="../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -92,6 +89,7 @@ export default class AppBar extends Vue {}
   right: 0;
   left: 0;
   background-color: white;
+  z-index: 222222222;
 }
 
 .app-bar-conteudo {
