@@ -281,7 +281,11 @@ window.onload = function() {
 };
 
 @Component({ components: { AppBar, Footer, CarouselCard } })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  public created() {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  }
+}
 </script>
 
 <style>

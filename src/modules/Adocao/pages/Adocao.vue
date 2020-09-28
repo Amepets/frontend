@@ -97,7 +97,11 @@ import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 
 @Component({ components: { AppBar, Footer } })
-export default class Adocao extends Vue {}
+export default class Adocao extends Vue {
+  public created() {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  }
+}
 </script>
 
 <style>

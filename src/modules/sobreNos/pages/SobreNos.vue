@@ -308,7 +308,11 @@ import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 
 @Component({ components: { AppBar, Footer } })
-export default class SobreNos extends Vue {}
+export default class SobreNos extends Vue {
+  public created() {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  }
+}
 </script>
 
 <style>
