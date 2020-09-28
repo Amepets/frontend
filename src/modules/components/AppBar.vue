@@ -2,22 +2,25 @@
   <div class="app-bar" v-if="!this.$vuetify.breakpoint.smAndDown">
     <v-flex class="w-100 d-flex align-center justify-center">
       <div class="app-bar-conteudo">
-        <img width="50px" class="mr-10" src="../../assets/imgs/logo-apa.png" />
-        <div class="mr-10 app-bar-links">
-          <a>Início</a>
-          <a>Como posso ajudar</a>
-          <a>Adoção</a>
+        <div class="d-flex align-center justify-center">
+          <img
+            width="50px"
+            class="mr-8"
+            src="../../assets/imgs/logo-apa-black.svg"
+          />
+          <router-link class="mr-8" to="/">Início</router-link>
+          <router-link class="mr-8" to="/ajuda">Como posso ajudar</router-link>
+          <router-link class="mr-8" to="/adocao">Adoção</router-link>
           <router-link to="/sobreNos">
-            <a>Sobre nós</a>
+            Sobre nós
           </router-link>
-          <a>Eventos</a>
-          <a>Loja</a>
         </div>
         <div>
           <v-btn rounded color="yellow">
             Ajudar
             <img
-              width="15px"
+              width="24px"
+
               class="ml-2"
               src="../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -38,7 +41,9 @@
           <v-btn rounded color="yellow">
             Ajudar
             <img
-              width="15px"
+
+              width="24px"
+
               class="ml-2"
               src="../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -54,10 +59,16 @@
               </v-btn>
             </template>
             <v-list class="mt-2 pr-10">
-              <p class="ml-2">Início</p>
-              <p class="ml-2">Como posso ajudar</p>
-              <p class="ml-2">Adoção</p>
-              <p class="ml-2">Sobre nós</p>
+              <div class="d-flex flex-column">
+                <router-link class="ml-2" to="/">Início</router-link>
+                <router-link class="ml-2" to="/ajuda"
+                  >Como posso ajudar</router-link
+                >
+                <router-link class="ml-2" to="/adocao">Adoção</router-link>
+                <router-link class="ml-2" to="/sobreNos">
+                  Sobre nós
+                </router-link>
+              </div>
             </v-list>
           </v-menu>
         </div>
@@ -97,18 +108,18 @@ export default class AppBar extends Vue {}
   padding: 0px !important;
 }
 
-.app-bar-links {
-  display: flex;
-  justify-content: space-between;
-  flex: 1;
-}
-
-.app-bar-links a {
+.app-bar-conteudo a {
   color: var(--v-grey-variant-two-base) !important;
 }
 
-.app-bar-links a:hover {
+.app-bar-conteudo a:hover {
   color: var(--v-black-base) !important;
+  font-weight: 500;
+}
+
+.app-bar-conteudo a.router-link-exact-active {
+  color: var(--v-black-base) !important;
+  font-weight: 500;
 }
 
 @media (max-width: 960px) {

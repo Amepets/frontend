@@ -11,10 +11,16 @@
           <h1 class="mr-3 mb-3">
             Em defesa e resgate de animais domésticos em situação de risco
           </h1>
-          <v-btn rounded :block="this.$vuetify.breakpoint.xs" color="yellow">
+          <v-btn
+            width="268px"
+            height="56px"
+            rounded
+            :block="this.$vuetify.breakpoint.xs"
+            color="yellow"
+          >
             Como posso ajudar
             <img
-              width="15px"
+              width="24px"
               class="ml-2"
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -64,7 +70,7 @@
           <v-btn text class="padding-botao">
             Conheça nossa história
             <img
-              width="15px"
+              width="24px"
               class="ml-1"
               src="../../../assets/imgs/home/icons/icon-link.svg"
             />
@@ -137,13 +143,15 @@
             curabitur leo in orci condimentum primis ultricies, hendrerit proin
           </p>
           <v-btn
+            width="268px"
+            height="56px"
             rounded
             color="yellow"
             :block="this.$vuetify.breakpoint.smAndDown"
           >
             Quero ajudar
             <img
-              width="15px"
+              width="24px"
               class="ml-2"
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -160,6 +168,7 @@
     <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
       <div class="chamada my-12 wrpa-invertido chamada-tablet">
         <v-btn
+          height="56px"
           v-if="this.$vuetify.breakpoint.smAndDown"
           class="mt-8"
           rounded
@@ -168,7 +177,7 @@
         >
           Quero adotar um pet
           <img
-            width="15px"
+            width="24px"
             class="ml-2"
             src="../../../assets/imgs/home/icons/icon-button.svg"
           />
@@ -182,13 +191,15 @@
             Adotar é um ato genuíno de amor, faça parte da nossa família.
           </h1>
           <v-btn
+            width="365px"
+            height="56px"
             v-if="!this.$vuetify.breakpoint.smAndDown"
             rounded
             color="yellow"
           >
-            Quero adotar um pet
+            Quero adotar
             <img
-              width="15px"
+              width="24px"
               class="ml-2"
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
@@ -206,10 +217,10 @@
               <v-text-field label="Nome" outlined dense></v-text-field>
               <v-text-field label="E-mail" outlined dense></v-text-field>
             </v-form>
-            <v-btn rounded color="yellow" block>
+            <v-btn width="365px" height="56px" rounded color="yellow" block>
               Fique por dentro
               <img
-                width="15px"
+                width="24px"
                 class="ml-2"
                 src="../../../assets/imgs/home/icons/icon-button.svg"
               />
@@ -270,7 +281,11 @@ window.onload = function() {
 };
 
 @Component({ components: { AppBar, Footer, CarouselCard } })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  public created() {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  }
+}
 </script>
 
 <style>

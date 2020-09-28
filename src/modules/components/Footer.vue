@@ -1,7 +1,11 @@
 <template>
   <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
     <div class="footer">
-      <img class="mb-4" width="50px" src="../../assets/imgs/logo-apa.png" />
+      <img
+        class="mb-4"
+        width="50px"
+        src="../../assets/imgs/logo-apa-black.svg"
+      />
       <div
         :class="
           this.$vuetify.breakpoint.smAndDown
@@ -31,12 +35,12 @@
                 this.$vuetify.breakpoint.smAndDown ? 'margin-right:80px' : ''
               "
             >
-              <p>Início</p>
-              <p>Como posso ajudar</p>
+              <p><router-link to="/">Início</router-link></p>
+              <p><router-link to="/ajuda">Como posso ajudar</router-link></p>
             </div>
             <div>
-              <p>Adoção</p>
-              <p>Sobre nós</p>
+              <p><router-link to="/adocao">Adoção</router-link></p>
+              <p><router-link to="/sobreNos">Sobre nós</router-link></p>
             </div>
           </div>
         </div>
@@ -63,10 +67,10 @@
       <div v-if="this.$vuetify.breakpoint.xs" class="border_top pt-6">
         <p class="border-titulos font-weight-bold">Páginas</p>
         <div>
-          <p>Início</p>
-          <p>Como posso ajudar</p>
-          <p>Adoção</p>
-          <p>Sobre nós</p>
+          <p><router-link to="/">Início</router-link></p>
+          <p><router-link to="/ajuda">Como posso ajudar</router-link></p>
+          <p><router-link to="/adocao">Adoção</router-link></p>
+          <p><router-link to="/sobreNos">Sobre nós</router-link></p>
         </div>
       </div>
 

@@ -2,6 +2,7 @@
   <div>
     <AppBar />
 
+
     <v-flex
       class="w-100 d-flex align-center justify-center"
       style="margin-top: 80px"
@@ -57,6 +58,9 @@
             molestie.
           </p>
           <v-btn
+            width="268px"
+            height="56px"
+
             v-if="!this.$vuetify.breakpoint.smAndDown"
             class="mt-4"
             rounded
@@ -75,6 +79,7 @@
           src="../../../assets/imgs/sobreNos/img-historia.png"
         />
         <v-btn
+          height="56px"
           block
           v-if="this.$vuetify.breakpoint.smAndDown"
           class="mt-4"
@@ -107,6 +112,7 @@
         "
       >
         <v-btn
+          height="56px"
           block
           v-if="this.$vuetify.breakpoint.smAndDown"
           class="mt-4 mb-6"
@@ -134,6 +140,8 @@
             curabitur leo in orci condimentum primis ultricies, hendrerit.
           </p>
           <v-btn
+            height="56px"
+            width="268px"
             v-if="!this.$vuetify.breakpoint.smAndDown"
             class="mt-4"
             rounded
@@ -196,6 +204,7 @@
         "
       >
         <v-btn
+          height="56px"
           block
           v-if="this.$vuetify.breakpoint.smAndDown"
           class="mt-4"
@@ -224,6 +233,8 @@
             tempor quisque suspendisse ut congue.
           </p>
           <v-btn
+            height="56px"
+            width="268px"
             v-if="!this.$vuetify.breakpoint.smAndDown"
             class="mt-4"
             rounded
@@ -243,6 +254,7 @@
     <v-flex class="w-100 d-flex align-center justify-center">
       <div
         :class="
+
           this.$vuetify.breakpoint.smAndDown
             ? 'chamada wrpa-normal'
             : 'chamada mt-16 mb-10'
@@ -257,6 +269,8 @@
             congue.
           </p>
           <v-btn
+            height="56px"
+            width="377px"
             v-if="!this.$vuetify.breakpoint.smAndDown"
             class="mt-4"
             rounded
@@ -275,6 +289,7 @@
           src="../../../assets/imgs/sobreNos/img-empresa-tambem-ajuda.png"
         />
         <v-btn
+          height="56px"
           block
           v-if="this.$vuetify.breakpoint.smAndDown"
           class="mt-4 mb-6"
@@ -301,7 +316,11 @@ import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 
 @Component({ components: { AppBar, Footer } })
-export default class SobreNos extends Vue {}
+export default class SobreNos extends Vue {
+  public created() {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  }
+}
 </script>
 
 <style>

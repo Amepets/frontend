@@ -1,11 +1,11 @@
+import "@/assets/css/global.css";
 import Vue from "vue";
 import App from "./App.vue";
+import "./assets/sass/reset.scss";
+import vuetify from "./plugins/vuetify";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
-import vuetify from "./plugins/vuetify";
-
-import "./assets/sass/reset.scss";
 
 Vue.config.productionTip = false;
 
