@@ -1,5 +1,5 @@
 <template>
-  <div class="teste">
+  <div style="height: 100vh;" class=" d-flex flex-column justify-space-between">
     <AppBar />
     <v-flex
       class="w-100 d-flex align-center justify-center blue-variant-three pb-6"
@@ -21,7 +21,6 @@
             v-if="!this.$vuetify.breakpoint.smAndDown"
             class="d-flex flex-column botoes"
           >
-
             <v-btn
               width="268px"
               height="56px"
@@ -29,7 +28,6 @@
               rounded
               color="yellow"
             >
-
               Quero adotar
               <img
                 width="24px"
@@ -62,9 +60,7 @@
           v-if="this.$vuetify.breakpoint.smAndDown"
           class="d-flex flex-column botoes"
         >
-
           <v-btn height="56px" block class="mt-4" rounded color="yellow">
-
             Quero adotar
             <img
               width="24px"
