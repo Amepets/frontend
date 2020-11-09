@@ -53,27 +53,30 @@
     </v-flex>
 
     <div class="titlebox">
-      <h1>Propósito platea neque</h1>
-      <h1>euismod ligula felis sapien</h1>
-      <h1>fermentum fames.A</h1>
+      <h1>Acreditamos que é possível</h1>
+      <h1>mudar realidades</h1>
       <v-flex class="w-100 d-flex align-center justify-center ">
         <div id="proposito" class="proposito">
           <v-list
-            style="padding: 0px 40px 0px 40px; display: flex; background-color: #49cbfc; margin:0; position: relative;"
+            style="padding: 0px 40px 0px 40px; justify-content: space-between; display: flex; background-color: #49cbfc; margin:0; position: relative;"
           >
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <div class="placeholder" />
+            <CarouselCard
+              src="Valores"
+              text="Nos baseamos em três pilares: a
+            empatia, o respeito e a ética. Temos o compromisso de realizar um
+            trabalho íntegro, transparente e honesto. "
+              className="card-container Valores-blank"
+            />
+            <CarouselCard
+              src="Missão"
+              text="Acolher e oportunizar um novo lar para aqueles que não tem voz e são  dignos de muito amor.  "
+              className="card-container Missão-blank"
+            />
+            <CarouselCard
+              src="Visão"
+              text="Um de nossos sonhos é poder unir cada um de nossos animais com aqueles que amam e os defendem. "
+              className="card-container Visão-blank"
+            />
           </v-list>
         </div>
       </v-flex>

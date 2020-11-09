@@ -1,13 +1,19 @@
 <template>
   <div class="external-container">
-    <div @click="scrollToTarget" class="card-container"></div>
-    <p>Lorem ipsum at opens nu vivamus consectetur arcu mattis enim blandit.</p>
+    <div @click="scrollToTarget" :class="className">
+      <d class="title-cd">{{ src }}</d>
+    </div>
+    <b class="txt">{{ text }}</b>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Prop } from "vue-property-decorator";
 import $ from "jquery";
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 
 @Component({})
 export default class CarouselCard extends Vue {
@@ -15,24 +21,54 @@ export default class CarouselCard extends Vue {
 
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   // eslint-disable-next-line class-methods-use-this
+  @Prop({ required: true }) public text!: string;
+
+  @Prop({ required: true }) public src!: string;
+
+  @Prop({ required: true }) public className!: string;
+
   private showTitle(e: any) {
     e.target.parentNode.className = "external-container-active";
   }
 
   scrollToTarget(e: any) {
-    const $container: any = document.getElementById("proposito");
-    const $scrollTo: any = e.target.parentNode;
-    $container.scrollTo({
-      top: 0,
-      left: $scrollTo.offsetLeft - 60,
-      behavior: "smooth"
-    });
+    let name = this.src;
+    if (this.src === "Missão") {
+      name = "Missao";
+    }
+    e.target.className = `card-container ${name}`;
     this.showTitle(e);
   }
 }
 </script>
 
 <style>
+.external-container b {
+  color: var(--v-blue-variant-three-base);
+}
+
+.txt {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  max-width: 340px;
+}
+.title-cd {
+  font-family: Helvetica;
+  font-size: 40px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 15px;
+}
 .external-container {
   position: relative;
   display: flex;
@@ -41,14 +77,6 @@ export default class CarouselCard extends Vue {
   align-content: space-between;
   height: 100%;
   flex-direction: column;
-}
-
-.external-container h1 {
-  color: var(--v-blue-variant-three-base);
-}
-
-.external-container p {
-  color: var(--v-blue-variant-three-base);
 }
 
 .external-container-active {
@@ -69,7 +97,6 @@ export default class CarouselCard extends Vue {
   font-style: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  color: black;
 }
 
 .external-container-active p {
@@ -81,25 +108,104 @@ export default class CarouselCard extends Vue {
   line-height: 1.33;
   letter-spacing: 0.6px;
   margin-top: 20px;
-  color: black;
 }
 
 .card-container {
   min-width: 297px;
+  max-width: 340px;
   height: 200px;
   border-radius: 10px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px 0 rgba(0, 0, 0, 0.14);
-  background-color: #ffffff;
-  margin-right: 20px;
+  margin-right: 40px;
   cursor: pointer;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-size: cover;
+  background-image: url("../../assets/imgs/carousel/bg-missao.png");
+  padding-left: 20px;
 }
 .card-container:hover {
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
 }
+.Missão {
+  background-image: url("../../assets/imgs/carousel/bg-missao.png");
+  color: white;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
 
+.Missão-blank {
+  background-image: url("../../assets/imgs/carousel/bg-missao-blank.png");
+  color: white;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.Valores {
+  background-image: url("../../assets/imgs/carousel/bg-valores.png");
+  color: white;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
+.Valores-blank {
+  background-image: url("../../assets/imgs/carousel/bg-valores-blank.png");
+  color: white;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
+.Visão {
+  background-image: url("../../assets/imgs/carousel/bg-visao.png");
+  color: black;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.Visão-blank {
+  background-image: url("../../assets/imgs/carousel/bg-visao-blank.png");
+  color: black;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
 @media (max-width: 600px) {
   .external-container p {
     font-family: Helvetica;
@@ -110,7 +216,6 @@ export default class CarouselCard extends Vue {
     line-height: 1.33;
     letter-spacing: 0.6px;
     margin-top: 20px;
-    color: black;
   }
   .card-container {
     min-width: 197px;
@@ -118,7 +223,6 @@ export default class CarouselCard extends Vue {
     border-radius: 10px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12),
       0 2px 4px 0 rgba(0, 0, 0, 0.14);
-    background-color: #ffffff;
     margin-right: 20px;
   }
 

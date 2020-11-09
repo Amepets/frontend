@@ -11,7 +11,7 @@ jobs:
     executor: docker-executor
     steps:
       - checkout
-      - run: npm install
+      - run: npm install --force
       - run: npm run build
       - persist_to_workspace:
           root: ./
