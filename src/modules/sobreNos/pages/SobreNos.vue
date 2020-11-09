@@ -2,7 +2,6 @@
   <div>
     <AppBar />
 
-
     <v-flex
       class="w-100 d-flex align-center justify-center"
       style="margin-top: 80px"
@@ -20,7 +19,7 @@
               this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mr-12 mb-3'
             "
           >
-            Lorem ipsum sodales nam morbi enim dui per urna at ullam.
+            Conheça a trajetória de 24 anos da APA
           </h1>
         </div>
         <img
@@ -44,23 +43,32 @@
         "
       >
         <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
-          <h1 class="mb-3">História</h1>
+          <h1 class="mb-3">Nossa História</h1>
           <p>
-            Lorem ipsum sodales nam morbi enim dui per urna at, ullamcorper
-            lobortis blandit tristique aptent vulputate sollicitudin diam
-            aptent, et ultricies convallis congue sodales magna enim nullam.
-            Eleifend sociosqu nec pulvinar nec curabitur metus faucibus placerat
-            semper, euismod semper congue sollicitudin potenti nam. Uismod
-            conubia turpis pharetra, amet fringilla malesuada taciti quisque
-            primis curae lacinia. Semper mi tortor sem porttitor nam metus
-            habitant cubilia lobortis nisi tempus mauris sem, tristique sodales
-            elit elementum aliquam pulvinar commodo eget donec vulputate
-            molestie.
+            Associação de Proteção Animal em Uberlândia (APA) surgiu em 1996,
+            tendo como objetivo principal a defesa de animais domésticos em
+            situações de risco.<br />
+            <br />
+            A APA atua na causa animal desde então, resgatando animais vítimas
+            de maus-tratos, abandonados em condições de perigo e fêmeas prenhes
+            em processo gestacional de risco. Em 2001, a APA ganhou o título de
+            utilidade pública municipal em Uberlândia e, em 2011, obteve o
+            título estadual. <br />
+            <br />Durante nossa trajetória, a estimativa é de que cerca de 20
+            mil animais tenham sido resgatados de situações de risco,
+            encontrados em condições inacreditáveis e desumanas. Além disso,
+            nossas ações preventivas foram responsáveis pela castração em massa
+            de mais de 300 animais domésticos somente no ano de 2013. Mesmo após
+            24 anos de atuação, ainda há um longo caminho pela frente. Hoje, o
+            espaço abriga cerca de 500 cães e gatos, todos à procura de um lar.
+            <br />
+            <br />
+            Para quem acredita que todos são dignos de amor, nos ajude a
+            perpetuar esse ideal! Adote, não compre.
           </p>
           <v-btn
             width="268px"
             height="56px"
-
             v-if="!this.$vuetify.breakpoint.smAndDown"
             class="mt-4"
             rounded
@@ -136,8 +144,12 @@
         >
           <h1 class="mb-3">Adoção responsável</h1>
           <p>
-            Platea dui egestas augue euismod curae adipiscing eget pharetra
-            curabitur leo in orci condimentum primis ultricies, hendrerit.
+            Adotar um animal é um ato de amor, mas que requer cuidados e
+            responsabilidade.<br />
+            <br />
+            Optamos pela adoção consciente como forma de prevenir abandonos e
+            para que nossos animais, que já sofreram o bastante, levem uma vida
+            tranquila e cheia de amor.
           </p>
           <v-btn
             height="56px"
@@ -172,13 +184,17 @@
         "
       >
         <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
-          <h1 class="mb-3">Prestação de contas</h1>
+          <h1 class="mb-3">Nossa estrutura</h1>
           <p>
-            Pulvinar lectus per vivamus netus id porttitor suspendisse cursus,
-            torquent quam pellentesque condimentum praesent vel varius, rutrum
-            metus porttitor sollicitudin vitae massa vivamus. Ligula felis
-            consequat malesuada ante euismod tempor quisque suspendisse ut
-            congue.
+            A APA é uma é organização sem fins lucrativos, criada por um ideal
+            em comum: a defesa de animais domésticos em situação de risco.
+            <br /><br />
+            As doações são convertidas integralmente para ajuda aos nossos
+            resgatados. São gastos, em média, 100kg de ração por dia, além dos
+            custos com vacinas, medicações, higiene e limpeza do espaço.
+            <br /><br />
+            Todo e qualquer gesto importa. Faça uma contribuição e nos ajude a
+            proteger cada vez mais animais!
           </p>
         </div>
         <img
@@ -225,12 +241,11 @@
         <div
           :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4 mt-6' : 'ml-12'"
         >
-          <h1 class="mb-3">Ajude você também</h1>
+          <h1 class="mb-3">Ajude a APA</h1>
           <p>
-            Não só falar de dinheiro mais outras coisas, como voluntario e itens
-            de higiene praesent vel varius, rutrum metus porttitor sollicitudin
-            vitae massa vivamus. Ligula felis consequat malesuada ante euismod
-            tempor quisque suspendisse ut congue.
+            Toda a verba para manutenção e cuidados com nossos animais vem de
+            doações e contribuições por apoiadores da causa animal. Seja um
+            deles e nos ajude a resgatar cada vez mais animais indefesos!
           </p>
           <v-btn
             height="56px"
@@ -254,19 +269,17 @@
     <v-flex class="w-100 d-flex align-center justify-center">
       <div
         :class="
-
           this.$vuetify.breakpoint.smAndDown
             ? 'chamada wrpa-normal'
             : 'chamada mt-16 mb-10'
         "
       >
         <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
-          <h1 class="mb-3">Empresa também ajuda</h1>
+          <h1 class="mb-3">Empresas que acreditam neste sonho</h1>
           <p>
-            Posicionar APA como associação séria praesent vel varius, rutrum
-            metus porttitor sollicitudin vitae massa vivamus. Ligula felis
-            consequat malesuada ante euismod tempor quisque suspendisse ut
-            congue.
+            As parcerias com empresas que acreditam na causa animal são muito
+            importante para nós. Seja uma empresa que auxilia no cuidado dos
+            indefesos, seja um parceiro da APA!
           </p>
           <v-btn
             height="56px"

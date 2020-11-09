@@ -23,13 +23,16 @@
             class="d-flex flex-row botoes"
           >
             <v-btn
-              style="padding:5px; border-radius: 10px; margin: 5px; width: 30%;"
+              style="padding:5px; border-radius: 10px; margin: 5px;"
+              width="141px"
+              height="99px"
               min-height="79px"
               max-width="121px"
-              class="mt-4"
+              class="mt-4 mr-3"
               x-small
               color="#ffffff"
               elevation="2"
+              @click="isOpenDadosBancarios = true"
             >
               <div class="button-wrapper">
                 <img
@@ -42,13 +45,16 @@
               </div>
             </v-btn>
             <v-btn
-              style="padding:5px; border-radius: 10px; margin: 5px; width: 30%;"
+              style="padding:5px; border-radius: 10px; margin: 5px;"
               min-height="79px"
+              width="141px"
+              height="99px"
               max-width="121px"
-              class="mt-4"
+              class="mt-4 mr-3"
               x-small
               color="#ffffff"
               elevation="2"
+              @click="isOpenPontosColeta = true"
             >
               <div class="button-wrapper">
                 <img
@@ -60,25 +66,32 @@
                 <p>Produtos</p>
               </div>
             </v-btn>
-            <v-btn
-              style="padding: 5px; border-radius: 10px; margin: 5px; width: 30%;"
-              min-height="79px"
-              max-width="121px"
-              class="mt-4"
-              x-small
-              color="#ffffff"
-              elevation="2"
+            <a
+              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20me%20voluntariar"
+              target="_blank"
             >
-              <div class="button-wrapper">
-                <img
-                  width="24px"
-                  class="mb-2"
-                  src="../../../assets/imgs/ajuda/ic-voluntery.svg"
-                />
-                <p>Tornar-se</p>
-                Voluntário
-              </div>
-            </v-btn>
+              <v-btn
+                style="padding: 5px; border-radius: 10px; margin: 5px; w"
+                min-height="79px"
+                max-width="121px"
+                width="141px"
+                height="99px"
+                class="mt-4"
+                x-small
+                color="#ffffff"
+                elevation="2"
+              >
+                <div class="button-wrapper">
+                  <img
+                    width="24px"
+                    class="mb-2"
+                    src="../../../assets/imgs/ajuda/ic-voluntery.svg"
+                  />
+                  <p>Tornar-se</p>
+                  <p>Voluntário</p>
+                </div>
+              </v-btn>
+            </a>
           </div>
         </div>
         <img
@@ -95,9 +108,12 @@
             min-height="79px"
             max-width="121px"
             class="mt-4"
+            width="141px"
+            height="99px"
             x-small
             color="#ffffff"
             elevation="2"
+            @click="isOpenDadosBancarios = true"
           >
             <div class="button-wrapper">
               <img
@@ -115,8 +131,11 @@
             max-width="121px"
             class="mt-4"
             x-small
+            width="141px"
+            height="99px"
             color="#ffffff"
             elevation="2"
+            @click="isOpenPontosColeta = true"
           >
             <div class="button-wrapper">
               <img
@@ -128,28 +147,45 @@
               <p>Produtos</p>
             </div>
           </v-btn>
+
           <v-btn
             style="padding: 5px; border-radius: 10px; margin: 5px; width: 30%;"
             min-height="79px"
             max-width="121px"
             class="mt-4"
+            width="141px"
+            height="99px"
             x-small
             color="#ffffff"
             elevation="2"
           >
-            <div class="button-wrapper">
-              <img
-                width="24px"
-                class="mb-2"
-                src="../../../assets/imgs/ajuda/ic-voluntery.svg"
-              />
-              <p>Tornar-se</p>
-              Voluntário
-            </div>
+            <a
+              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20me%20voluntariar"
+              target="_blank"
+            >
+              <div class="button-wrapper">
+                <img
+                  width="24px"
+                  class="mb-2"
+                  src="../../../assets/imgs/ajuda/ic-voluntery.svg"
+                />
+                <p>Tornar-se</p>
+                <p>Voluntário</p>
+                <p></p>
+              </div>
+            </a>
           </v-btn>
         </div>
       </div>
     </v-flex>
+    <ModalDadosBancarios
+      v-if="isOpenDadosBancarios"
+      :showModal.sync="isOpenDadosBancarios"
+    />
+    <ModalPontosColeta
+      v-if="isOpenPontosColeta"
+      :showModal.sync="isOpenPontosColeta"
+    />
     <Footer />
   </div>
 </template>
@@ -158,9 +194,17 @@
 import { Component, Vue } from "vue-property-decorator";
 import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
+import ModalDadosBancarios from "../../components/modais/DadosBancarios.vue";
+import ModalPontosColeta from "../../components/modais/PontosColeta.vue";
 
-@Component({ components: { AppBar, Footer } })
+@Component({
+  components: { AppBar, Footer, ModalDadosBancarios, ModalPontosColeta }
+})
 export default class Ajuda extends Vue {
+  private isOpenDadosBancarios = false;
+
+  private isOpenPontosColeta = false;
+
   public created() {
     window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
   }
@@ -168,6 +212,9 @@ export default class Ajuda extends Vue {
 </script>
 
 <style>
+.v-btn__content {
+  justify-content: flex-start;
+}
 .chamada {
   padding: 0px 10px;
   width: 100%;
@@ -187,6 +234,8 @@ export default class Ajuda extends Vue {
   width: 100%;
   height: 100%;
   justify-content: flex-start;
+  justify-items: flex-start;
+  justify-self: flex-start;
   align-items: flex-start;
   flex-direction: column;
   font-size: 14px;
