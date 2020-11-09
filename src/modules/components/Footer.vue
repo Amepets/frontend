@@ -50,10 +50,14 @@
           class="flex-grow-1 d-flex justify-space-between ml-4"
         >
           <div class="redes_sociais d-flex justify-center align-center">
-            <img src="../../assets/imgs/redesSociais/ic-instagram.svg" />
+            <a href="https://www.instagram.com/apa.uberlandia/" target="_blank"
+              ><img src="../../assets/imgs/redesSociais/ic-instagram.svg"
+            /></a>
           </div>
           <div class="redes_sociais d-flex justify-center align-center">
-            <img src="../../assets/imgs/redesSociais/ic-facebook.svg" />
+            <a href="https://www.facebook.com/apa.uberlandia" target="_blank"
+              ><img src="../../assets/imgs/redesSociais/ic-facebook.svg"
+            /></a>
           </div>
           <div class="redes_sociais d-flex justify-center align-center">
             <img src="../../assets/imgs/redesSociais/ic-linkedin.svg" />
@@ -79,10 +83,14 @@
         class="d-flex pt-12 border_top"
       >
         <div class="redes_sociais d-flex justify-center align-center mr-5">
-          <img src="../../assets/imgs/redesSociais/ic-instagram.svg" />
+          <a href="https://www.instagram.com/apa.uberlandia/" target="_blank"
+            ><img src="../../assets/imgs/redesSociais/ic-instagram.svg"
+          /></a>
         </div>
         <div class="redes_sociais d-flex justify-center align-center mr-5">
-          <img src="../../assets/imgs/redesSociais/ic-facebook.svg" />
+          <a href="https://www.facebook.com/apa.uberlandia" target="_blank"
+            ><img src="../../assets/imgs/redesSociais/ic-facebook.svg"
+          /></a>
         </div>
         <div class="redes_sociais d-flex justify-center align-center mr-5">
           <img src="../../assets/imgs/redesSociais/ic-linkedin.svg" />
