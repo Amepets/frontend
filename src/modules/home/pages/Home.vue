@@ -200,7 +200,6 @@
       <div class="chamada my-12 wrpa-invertido chamada-tablet py-12">
         <v-btn
           height="56px"
-          width="365px"
           class="mt-4"
           outlined
           rounded
@@ -284,7 +283,7 @@
               <v-text-field label="Nome" outlined dense></v-text-field>
               <v-text-field label="E-mail" outlined dense></v-text-field>
             </v-form>
-            <v-btn width="365px" height="56px" rounded color="yellow" block>
+            <v-btn height="56px" rounded color="yellow" block>
               Fique por dentro
               <img
                 width="24px"
