@@ -51,12 +51,16 @@
         >
           <div class="redes_sociais d-flex justify-center align-center">
             <a href="https://www.instagram.com/apa.uberlandia/" target="_blank"
-              ><img src="../../assets/imgs/redesSociais/ic-instagram.svg"
+              ><img
+                class="mb-n2"
+                src="../../assets/imgs/redesSociais/ic-instagram.svg"
             /></a>
           </div>
           <div class="redes_sociais d-flex justify-center align-center">
             <a href="https://www.facebook.com/apa.uberlandia" target="_blank"
-              ><img src="../../assets/imgs/redesSociais/ic-facebook.svg"
+              ><img
+                class="mb-n2"
+                src="../../assets/imgs/redesSociais/ic-facebook.svg"
             /></a>
           </div>
           <div class="redes_sociais d-flex justify-center align-center">
@@ -84,12 +88,16 @@
       >
         <div class="redes_sociais d-flex justify-center align-center mr-5">
           <a href="https://www.instagram.com/apa.uberlandia/" target="_blank"
-            ><img src="../../assets/imgs/redesSociais/ic-instagram.svg"
+            ><img
+              class="mb-n2"
+              src="../../assets/imgs/redesSociais/ic-instagram.svg"
           /></a>
         </div>
         <div class="redes_sociais d-flex justify-center align-center mr-5">
           <a href="https://www.facebook.com/apa.uberlandia" target="_blank"
-            ><img src="../../assets/imgs/redesSociais/ic-facebook.svg"
+            ><img
+              class="mb-n2"
+              src="../../assets/imgs/redesSociais/ic-facebook.svg"
           /></a>
         </div>
         <div class="redes_sociais d-flex justify-center align-center mr-5">

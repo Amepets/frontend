@@ -1,8 +1,5 @@
 <template>
-  <v-flex
-    style="height: 100vh;"
-    class=" d-flex flex-column justify-space-between"
-  >
+  <div style="height: 100vh;" class=" d-flex flex-column justify-space-between">
     <AppBar v-if="!isOpenDadosBancarios && !isOpenPontosColeta" />
     <v-flex
       class="w-100 d-flex align-center justify-center blue-variant-three pb-6 "
@@ -190,7 +187,7 @@
       :showModal.sync="isOpenPontosColeta"
     />
     <Footer />
-  </v-flex>
+  </div>
 </template>
 
 <script lang="ts">
