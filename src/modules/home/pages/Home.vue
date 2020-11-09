@@ -2,21 +2,32 @@
 <template>
   <div>
     <AppBar />
-    <v-flex class="w-100 d-flex align-center justify-center mt-10">
+    <v-flex
+      style="margin: 120px 0 50px 0"
+      class="w-100 d-flex align-center justify-center"
+    >
       <div
         :class="
-          this.$vuetify.breakpoint.xs ? 'chamada wrpa-invertido' : 'chamada'
+          this.$vuetify.breakpoint.smAndDown
+            ? 'chamada wrpa-invertido'
+            : 'chamada'
         "
       >
         <div>
-          <h1 class="mr-3 mb-3">
-            Em defesa e resgate de animais domésticos em situação de risco
-          </h1>
+          <div
+            :style="
+              this.$vuetify.breakpoint.smAndDown ? 'text-align:center' : ''
+            "
+          >
+            <h1 class="mr-6 mb-3">
+              Em defesa e resgate de animais domésticos em situação de risco
+            </h1>
+          </div>
           <v-btn
             width="268px"
             height="56px"
             rounded
-            :block="this.$vuetify.breakpoint.xs"
+            :block="this.$vuetify.breakpoint.smAndDown"
             color="yellow"
           >
             Como posso ajudar
@@ -28,17 +39,19 @@
           </v-btn>
         </div>
         <img
-          v-if="!this.$vuetify.breakpoint.sm"
-          :width="this.$vuetify.breakpoint.xs ? '100%' : '60%'"
+          :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/home/img-home.png"
-        />
-        <img
-          v-else
-          width="60%"
-          src="../../../assets/imgs/home/img-home-tablet.png"
         />
       </div>
     </v-flex>
+
+    <v-flex class="w-100 d-flex align-center">
+      <img
+        width="100%"
+        src="../../../assets/imgs/home/session-organic-form-blue.png"
+      />
+    </v-flex>
+
     <div class="titlebox">
       <h1>Acreditamos que é possível</h1>
       <h1>mudar realidades</h1>
@@ -71,11 +84,11 @@
     <v-flex class="w-100 d-flex align-center justify-end mb-10">
       <div class="informacoes direita wrpa-invertido">
         <div class="informacoes-texto">
-          <h1 class="mb-3">
-            Uma chamada legal para nosso usuário entrar na página sobre nós
+          <h1 class="mb-3 mr-12">
+            Conheça a trajetória da APA até aqui
           </h1>
           <v-btn text class="padding-botao">
-            Conheça nossa história
+            História da APA
             <img
               width="24px"
               class="ml-1"
@@ -84,9 +97,9 @@
           </v-btn>
         </div>
         <img
-          class="ml-4"
+          class="ml-6"
           v-if="!this.$vuetify.breakpoint.smAndDown"
-          width="60%"
+          width="50%"
           src="../../../assets/imgs/home/img-sobre-nos-desktop.png"
         />
         <img
@@ -105,56 +118,54 @@
     </v-flex>
 
     <v-flex
-      class="w-100 d-flex align-center justify-start grey-variant-four pb-6"
+      class="w-100 d-flex align-center justify-center grey-variant-four pb-6"
     >
-      <div class="informacoes esquerda wrpa-invertido mt-10">
+      <div class="chamada chamada-tablet  wrpa-invertido mt-10">
         <img
           class="mt-6"
-          :width="!this.$vuetify.breakpoint.smAndDown ? '60%' : '100%'"
+          :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
           src="../../../assets/imgs/home/img-oque-fazemos-01.png"
         />
 
-        <div
-          :class="
-            !this.$vuetify.breakpoint.smAndDown ? 'ml-3' : 'informacoes-texto'
-          "
-        >
-          <h1 class="mb-3">Oque fazemos at nu ugh sotphi lorem ipsum</h1>
+        <div :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-16' : ''">
+          <h1 class="mb-3">Entenda o que fazemos</h1>
           <p>
-            Plate dui egestas augue euismod curae adipiscing eget pharetra
-            curabitur leo in orci condimentum primis ultricies, hendrerit proin
-            lorem ipsum card be nulok.
+            A APA atua em várias frentes para contribuir para a causa animal.
+            Além do resgate de cães e gatos em situações de risco, promovemos
+            feirinhas de adoção e campanhas de castração em massa a fim de
+            manter controle de natalidade. Divulgamos também conteúdos
+            informativos para conscientização da população. Seguimos um sonho
+            que é poder proporcionar todos os cuidados que nossos animais
+            precisam até que sejam adotados e tenham lares repletos de amor.
           </p>
         </div>
       </div>
     </v-flex>
 
-    <v-flex class="w-100 d-flex align-center justify-end grey-variant-four">
+    <v-flex class="w-100 d-flex align-center justify-center grey-variant-four">
       <div
         :class="
           !this.$vuetify.breakpoint.smAndDown
-            ? 'informacoes direita wrpa-normal pb-8'
-            : 'informacoes direita wrpa-normal'
+            ? 'informacoes  wrpa-normal pb-8'
+            : 'chamada chamada-tablet wrpa-normal'
         "
       >
-        <div
-          :class="
-            !this.$vuetify.breakpoint.smAndDown ? 'mr-3' : 'informacoes-texto'
-          "
-        >
+        <div :class="!this.$vuetify.breakpoint.smAndDown ? 'mr-16 my-12' : ''">
           <h1 class="mb-3">
-            Numeros de animais que ajudamos vitae primis cras ad curab
+            Mais de 20 mil cães e gatos resgatados
           </h1>
           <p class="mb-3">
-            Platea dui egestas augue euismod curae adipiscing eget pharetra
-            curabitur leo in orci condimentum primis ultricies, hendrerit proin
+            O número de animais resgatados pela APA já ultrapassou os 20 mil.
+            Sempre atentos aos animais em situações de risco, buscamos aumentar
+            nossa capacidade para atender números cada vez maiores. Com a sua
+            ajuda, podemos ir muito além!
           </p>
           <v-btn
+            v-if="!this.$vuetify.breakpoint.smAndDown"
             width="268px"
             height="56px"
             rounded
             color="yellow"
-            :block="this.$vuetify.breakpoint.smAndDown"
           >
             Quero ajudar
             <img
@@ -166,14 +177,47 @@
         </div>
         <img
           class="mt-2"
-          :width="!this.$vuetify.breakpoint.smAndDown ? '60%' : '100%'"
+          :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
           src="../../../assets/imgs/home/img-oque-fazemos-02.png"
         />
+        <v-btn
+          v-if="this.$vuetify.breakpoint.smAndDown"
+          width="268px"
+          height="56px"
+          rounded
+          block
+          color="yellow"
+          class="my-4"
+        >
+          Quero ajudar
+          <img
+            width="24px"
+            class="ml-2"
+            src="../../../assets/imgs/home/icons/icon-button.svg"
+          />
+        </v-btn>
       </div>
     </v-flex>
 
     <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
-      <div class="chamada my-12 wrpa-invertido chamada-tablet">
+      <div class="chamada my-12 wrpa-invertido chamada-tablet py-12">
+        <v-btn
+          height="56px"
+          width="365px"
+          class="mt-4"
+          outlined
+          rounded
+          v-if="this.$vuetify.breakpoint.smAndDown"
+          color="white"
+          block
+        >
+          Quero apadrinhar
+          <img
+            width="24px"
+            class="ml-2"
+            src="../../../assets/imgs/icon-button-white.svg"
+          />
+        </v-btn>
         <v-btn
           height="56px"
           v-if="this.$vuetify.breakpoint.smAndDown"
@@ -182,20 +226,21 @@
           block
           color="yellow"
         >
-          Quero adotar um pet
+          Quero adotar
           <img
             width="24px"
             class="ml-2"
             src="../../../assets/imgs/home/icons/icon-button.svg"
           />
         </v-btn>
+
         <img
-          :width="!this.$vuetify.breakpoint.smAndDown ? '60%' : '100%'"
+          :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
           src="../../../assets/imgs/home/ilustracao-adote-um-amigo.png"
         />
-        <div :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-7' : ''">
+        <div :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-16' : ''">
           <h1 class="mb-3">
-            Adotar é um ato genuíno de amor, faça parte da nossa família.
+            A adoção é um ato de amor. Faça parte de nossa família!
           </h1>
           <v-btn
             width="365px"
@@ -211,15 +256,33 @@
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
           </v-btn>
+          <v-btn
+            v-if="!this.$vuetify.breakpoint.smAndDown"
+            height="56px"
+            width="365px"
+            class="mt-4"
+            outlined
+            rounded
+            color="white"
+          >
+            Quero apadrinhar
+            <img
+              width="24px"
+              class="ml-2"
+              src="../../../assets/imgs/icon-button-white.svg"
+            />
+          </v-btn>
         </div>
       </div>
     </v-flex>
 
     <v-flex class="w-100 d-flex align-center justify-end pb-12">
       <div class="informacoes direita wrpa-invertido">
-        <div class="informacoes-texto">
+        <div class="informacoes-texto ">
           <div class="border">
-            <h1 class="mb-3">Inscrição personalizada convallis fusce cras</h1>
+            <h1 class="mb-3">
+              Acompanhe iniciativas e novidades da APA, inscreva-se!
+            </h1>
             <v-form>
               <v-text-field label="Nome" outlined dense></v-text-field>
               <v-text-field label="E-mail" outlined dense></v-text-field>
@@ -236,16 +299,86 @@
         </div>
         <img
           v-if="!this.$vuetify.breakpoint.smAndDown"
-          class="ml-12"
-          width="60%"
+          class="ml-16"
+          width="50%"
           src="../../../assets/imgs/home/img-news-desktop.png"
         />
         <img
           class="mb-10"
           v-else
           width="100%"
-          src="../../../assets/imgs/home/img-newsletter.png"
+          src="../../../assets/imgs/home/img-newsletter.jpg"
         />
+      </div>
+    </v-flex>
+
+    <v-flex class="w-100 d-flex  align-center justify-center py-12">
+      <div class=" chamada d-flex flex-column align-center justify-center">
+        <div style="width:60%; text-align:center">
+          <h1>Marcas que acreditam na APA Uberlândia</h1>
+        </div>
+        <div class="d-flex flex-wrap align-center justify-center">
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-uai-pet.jpg"
+          />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-herdora-cosmeticos.jpg"
+          />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-start-quimica.jpg"
+          />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-droga-vet.jpg"
+          />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-cvc-brasil.jpg"
+          />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-centro-oeste.jpg"
+          />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-do-seu-jeitim.jpg"
+          />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-hospital-veterinario.jpg"
+          />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-coco-bambu.jpg"
+          />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-farmacia-confiaca.jpg"
+          />
+        </div>
       </div>
     </v-flex>
 
