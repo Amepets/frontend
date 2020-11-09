@@ -71,7 +71,7 @@
               target="_blank"
             >
               <v-btn
-                style="padding: 5px; border-radius: 10px; margin: 5px; w"
+                style="padding: 5px; border-radius: 10px; margin: 5px;"
                 min-height="79px"
                 max-width="121px"
                 width="141px"
@@ -152,7 +152,7 @@
             style="padding: 5px; border-radius: 10px; margin: 5px; width: 30%;"
             min-height="79px"
             max-width="121px"
-            class="mt-4"
+            class="mt-4 alinhamento-botao"
             width="141px"
             height="99px"
             x-small
@@ -212,9 +212,10 @@ export default class Ajuda extends Vue {
 </script>
 
 <style>
-.v-btn__content {
+.alinhamento-botao {
   justify-content: flex-start;
 }
+
 .chamada {
   padding: 0px 10px;
   width: 100%;
