@@ -1,9 +1,16 @@
 <template>
-  <div style="height: 100vh;" class=" d-flex flex-column justify-space-between">
+  <div
+    :style="!this.$vuetify.breakpoint.smAndDown ? 'height: 100vh' : ''"
+    :class="
+      !this.$vuetify.breakpoint.smAndDown
+        ? 'd-flex flex-column justify-space-between'
+        : ''
+    "
+  >
     <AppBar v-if="!isOpenDadosBancarios && !isOpenPontosColeta" />
     <v-flex
-      class="w-100 d-flex align-center justify-center blue-variant-three pb-6 "
-      style="padding-top: 100px; "
+      class="w-100 d-flex align-center justify-center blue-variant-three pb-6"
+      style="padding-top: 100px"
     >
       <div
         :class="
@@ -23,7 +30,7 @@
             class="d-flex flex-row botoes"
           >
             <v-btn
-              style="padding:5px; border-radius: 10px; margin: 5px;"
+              style="padding: 5px; border-radius: 10px; margin: 5px"
               width="141px"
               height="99px"
               min-height="79px"
@@ -45,7 +52,7 @@
               </div>
             </v-btn>
             <v-btn
-              style="padding:5px; border-radius: 10px; margin: 5px;"
+              style="padding: 5px; border-radius: 10px; margin: 5px"
               min-height="79px"
               width="141px"
               height="99px"
@@ -71,7 +78,7 @@
               target="_blank"
             >
               <v-btn
-                style="padding: 5px; border-radius: 10px; margin: 5px;"
+                style="padding: 5px; border-radius: 10px; margin: 5px"
                 min-height="79px"
                 max-width="121px"
                 width="141px"
@@ -104,7 +111,7 @@
           class="d-flex flex-row botoes"
         >
           <v-btn
-            style="padding:5px; border-radius: 10px; margin: 5px; width: 30%;"
+            style="padding: 5px; border-radius: 10px; margin: 5px; width: 30%"
             min-height="79px"
             max-width="121px"
             class="mt-4"
@@ -126,7 +133,7 @@
             </div>
           </v-btn>
           <v-btn
-            style="padding:5px; border-radius: 10px; margin: 5px; width: 30%;"
+            style="padding: 5px; border-radius: 10px; margin: 5px; width: 30%"
             min-height="79px"
             max-width="121px"
             class="mt-4"
@@ -149,7 +156,7 @@
           </v-btn>
 
           <v-btn
-            style="padding: 5px; border-radius: 10px; margin: 5px; width: 30%;"
+            style="padding: 5px; border-radius: 10px; margin: 5px; width: 30%"
             min-height="79px"
             max-width="121px"
             class="mt-4 alinhamento-botao"
@@ -198,7 +205,7 @@ import ModalDadosBancarios from "../../components/modais/DadosBancarios.vue";
 import ModalPontosColeta from "../../components/modais/PontosColeta.vue";
 
 @Component({
-  components: { AppBar, Footer, ModalDadosBancarios, ModalPontosColeta }
+  components: { AppBar, Footer, ModalDadosBancarios, ModalPontosColeta },
 })
 export default class Ajuda extends Vue {
   private isOpenDadosBancarios = false;
