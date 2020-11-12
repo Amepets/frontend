@@ -1,5 +1,12 @@
 <template>
-  <div style="height: 100vh;" class=" d-flex flex-column justify-space-between">
+  <div
+    :style="!this.$vuetify.breakpoint.smAndDown ? 'height: 100vh' : ''"
+    :class="
+      !this.$vuetify.breakpoint.smAndDown
+        ? 'd-flex flex-column justify-space-between'
+        : ''
+    "
+  >
     <AppBar />
     <v-flex
       class="w-100 d-flex align-center justify-center blue-variant-three pb-6"
