@@ -19,12 +19,20 @@
               this.$vuetify.breakpoint.smAndDown ? 'text-align:center' : ''
             "
           >
-            <h1 class="mr-6 mb-3">
+            <h1
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              class="mr-6 mb-3"
+            >
               Em defesa e resgate de animais domésticos em situação de risco
             </h1>
           </div>
           <router-link to="/ajuda">
             <v-btn
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-right"
+              data-aos-duration="800"
               width="268px"
               height="56px"
               rounded
@@ -41,6 +49,9 @@
           </router-link>
         </div>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="800"
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/home/img-home.png"
         />
@@ -92,12 +103,20 @@
     </div>
     <v-flex class="w-100 d-flex align-center justify-end mb-10">
       <div class="informacoes direita wrpa-invertido">
-        <div class="informacoes-texto">
+        <div
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          class="informacoes-texto"
+        >
           <h1 class="mb-3 mr-12">Conheça a trajetória da APA até aqui</h1>
           <router-link to="/sobreNos">
             <v-btn text class="padding-botao">
               História da APA
               <img
+                data-aos-anchor-placement="top-bottom"
+                data-aos="fade-left"
+                data-aos-duration="1000"
                 width="24px"
                 class="ml-1"
                 src="../../../assets/imgs/home/icons/icon-link.svg"
@@ -106,6 +125,9 @@
           </router-link>
         </div>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="1000"
           class="ml-6"
           v-if="!this.$vuetify.breakpoint.smAndDown"
           width="50%"
@@ -131,12 +153,20 @@
     >
       <div class="chamada chamada-tablet wrpa-invertido mt-10">
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
+          data-aos-duration="800"
           class="mt-6"
           :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
           src="../../../assets/imgs/home/img-oque-fazemos-01.png"
         />
 
-        <div :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-16' : ''">
+        <div
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-16' : ''"
+        >
           <h1 class="mb-3">Entenda o que fazemos</h1>
           <p>
             A APA atua em várias frentes para contribuir para a causa animal.
@@ -161,7 +191,12 @@
       >
         <div :class="!this.$vuetify.breakpoint.smAndDown ? 'mr-16 my-12' : ''">
           <h1 class="mb-3">Mais de 20 mil cães e gatos resgatados</h1>
-          <p class="mb-3">
+          <p
+            data-aos-anchor-placement="top-bottom"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            class="mb-3"
+          >
             O número de animais resgatados pela APA já ultrapassou os 20 mil.
             Sempre atentos aos animais em situações de risco, buscamos aumentar
             nossa capacidade para atender números cada vez maiores. Com a sua
@@ -177,6 +212,9 @@
             >
               Quero ajudar
               <img
+                data-aos-anchor-placement="top-bottom"
+                data-aos="fade-left"
+                data-aos-duration="1100"
                 width="24px"
                 class="ml-2"
                 src="../../../assets/imgs/home/icons/icon-button.svg"
@@ -185,11 +223,17 @@
           </router-link>
         </div>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="800"
           class="mt-2"
           :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
           src="../../../assets/imgs/home/img-oque-fazemos-02.png"
         />
         <v-btn
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-up"
+          data-aos-duration="800"
           v-if="this.$vuetify.breakpoint.smAndDown"
           width="268px"
           height="56px"
@@ -215,6 +259,9 @@
           target="_blank"
         >
           <v-btn
+            data-aos-anchor-placement="top-bottom"
+            data-aos="fade-down"
+            data-aos-duration="800"
             height="56px"
             class="mt-4"
             outlined
@@ -252,6 +299,9 @@
           </v-btn>
         </a>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
+          data-aos-duration="800"
           :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
           src="../../../assets/imgs/home/ilustracao-adote-um-amigo.png"
         />
@@ -264,6 +314,9 @@
             target="_blank"
           >
             <v-btn
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-up"
+              data-aos-duration="800"
               width="365px"
               height="56px"
               v-if="!this.$vuetify.breakpoint.smAndDown"
@@ -283,6 +336,9 @@
             target="_blank"
           >
             <v-btn
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-down"
+              data-aos-duration="800"
               v-if="!this.$vuetify.breakpoint.smAndDown"
               height="56px"
               width="365px"

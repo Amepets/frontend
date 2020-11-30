@@ -15,6 +15,9 @@
       >
         <div>
           <h1
+            data-aos-anchor-placement="top-bottom"
+            data-aos="fade-right"
+            data-aos-duration="800"
             :class="
               this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mr-12 mb-3'
             "
@@ -23,6 +26,9 @@
           </h1>
         </div>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="800"
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/sobreNos/img-sobre-nos.png"
         />
@@ -42,7 +48,12 @@
           this.$vuetify.breakpoint.smAndDown ? 'chamada wrpa-normal' : 'chamada'
         "
       >
-        <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
+        <div
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'"
+        >
           <h1 class="mb-3">Nossa História</h1>
           <p>
             Associação de Proteção Animal em Uberlândia (APA) surgiu em 1996,
@@ -85,11 +96,17 @@
           </router-link>
         </div>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="800"
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/sobreNos/img-historia.png"
         />
         <router-link to="ajuda">
           <v-btn
+            data-aos-anchor-placement="top-bottom"
+            data-aos="fade-right"
+            data-aos-duration="1300"
             height="56px"
             block
             v-if="this.$vuetify.breakpoint.smAndDown"
@@ -144,11 +161,17 @@
           </v-btn>
         </a>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
+          data-aos-duration="800"
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/sobreNos/img-adocao.png"
         />
 
         <div
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="800"
           :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4 mt-2' : 'ml-12'"
         >
           <h1 class="mb-3">Adoção responsável</h1>
@@ -197,7 +220,12 @@
           this.$vuetify.breakpoint.smAndDown ? 'chamada wrpa-normal' : 'chamada'
         "
       >
-        <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
+        <div
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'"
+        >
           <h1 class="mb-3">Nossa estrutura</h1>
           <p>
             A APA é uma é organização sem fins lucrativos, criada por um ideal
@@ -212,6 +240,9 @@
           </p>
         </div>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
+          data-aos-duration="800"
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/sobreNos/img-prestacao-de-contas.png"
         />
@@ -252,13 +283,23 @@
         </router-link>
 
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
+          data-aos-duration="800"
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/sobreNos/img-ajude-voce-tambem.png"
         />
         <div
           :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4 mt-6' : 'ml-12'"
         >
-          <h1 class="mb-3">Ajude a APA</h1>
+          <h1
+            data-aos-anchor-placement="top-bottom"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            class="mb-3"
+          >
+            Ajude a APA
+          </h1>
           <p>
             Toda a verba para manutenção e cuidados com nossos animais vem de
             doações e contribuições por apoiadores da causa animal. Seja um
@@ -266,6 +307,9 @@
           </p>
           <router-link to="ajuda">
             <v-btn
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-up"
+              data-aos-duration="1100"
               height="56px"
               width="268px"
               v-if="!this.$vuetify.breakpoint.smAndDown"
@@ -293,7 +337,12 @@
             : 'chamada mt-16 mb-10'
         "
       >
-        <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
+        <div
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'"
+        >
           <h1 class="mb-3">Empresas que acreditam neste sonho</h1>
           <p>
             As parcerias com empresas que acreditam na causa animal são muito
@@ -305,6 +354,9 @@
             target="_blank"
           >
             <v-btn
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-up"
+              data-aos-duration="1300"
               height="56px"
               width="377px"
               v-if="!this.$vuetify.breakpoint.smAndDown"
@@ -322,6 +374,9 @@
           </a>
         </div>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
+          data-aos-duration="800"
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/sobreNos/img-empresa-tambem-ajuda.png"
         />

@@ -19,6 +19,9 @@
       >
         <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
           <h1
+            data-aos-anchor-placement="top-bottom"
+            data-aos="fade-right"
+            data-aos-duration="800"
             :class="this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mb-3'"
           >
             Ajude a manter viva a causa animal, sua contribuição é muito
@@ -30,6 +33,9 @@
             class="d-flex flex-row botoes"
           >
             <v-btn
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-up"
+              data-aos-duration="800"
               style="padding: 5px; border-radius: 10px; margin: 5px"
               width="141px"
               height="99px"
@@ -52,6 +58,9 @@
               </div>
             </v-btn>
             <v-btn
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-down"
+              data-aos-duration="800"
               style="padding: 5px; border-radius: 10px; margin: 5px"
               min-height="79px"
               width="141px"
@@ -78,6 +87,9 @@
               target="_blank"
             >
               <v-btn
+                data-aos-anchor-placement="top-bottom"
+                data-aos="fade-up"
+                data-aos-duration="800"
                 style="padding: 5px; border-radius: 10px; margin: 5px"
                 min-height="79px"
                 max-width="121px"
@@ -102,6 +114,9 @@
           </div>
         </div>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="800"
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/ajuda/manAndDog.svg"
         />
@@ -205,7 +220,7 @@ import ModalDadosBancarios from "../../components/modais/DadosBancarios.vue";
 import ModalPontosColeta from "../../components/modais/PontosColeta.vue";
 
 @Component({
-  components: { AppBar, Footer, ModalDadosBancarios, ModalPontosColeta },
+  components: { AppBar, Footer, ModalDadosBancarios, ModalPontosColeta }
 })
 export default class Ajuda extends Vue {
   private isOpenDadosBancarios = false;

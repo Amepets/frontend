@@ -19,6 +19,9 @@
       >
         <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
           <h1
+            data-aos-anchor-placement="top-bottom"
+            data-aos="fade-up"
+            data-aos-duration="800"
             :class="this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mb-3'"
             style="width: 376px;
   height: 147px;
@@ -46,6 +49,9 @@
               target="_blank"
             >
               <v-btn
+                data-aos-anchor-placement="top-bottom"
+                data-aos="fade-up"
+                data-aos-duration="800"
                 width="268px"
                 height="56px"
                 class="mt-4"
@@ -65,6 +71,9 @@
               target="_blank"
             >
               <v-btn
+                data-aos-anchor-placement="top-bottom"
+                data-aos="fade-down"
+                data-aos-duration="800"
                 height="56px"
                 width="268px"
                 class="mt-4"
@@ -83,6 +92,9 @@
           </div>
         </div>
         <img
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-left"
+          data-aos-duration="800"
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/adocao/ilustracao-adocao.svg"
         />

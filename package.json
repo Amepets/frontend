@@ -14,7 +14,9 @@
     }
   },
   "dependencies": {
+    "@types/aos": "^3.0.3",
     "@types/jquery": "^3.5.1",
+    "aos": "^3.0.0-beta.6",
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
     "register-service-worker": "^1.7.1",
