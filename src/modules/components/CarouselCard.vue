@@ -1,7 +1,7 @@
 <template>
   <div class="external-container">
     <div @click="scrollToTarget" :class="className">
-      <d class="title-cd">{{ src }}</d>
+      <tt @click="scrollToTarget2" class="title-cd">{{ src }}</tt>
     </div>
     <b class="txt">{{ text }}</b>
   </div>
@@ -31,6 +31,10 @@ export default class CarouselCard extends Vue {
     e.target.parentNode.className = "external-container-active";
   }
 
+  private showTitle2(e: any) {
+    e.parentNode.className = "external-container-active";
+  }
+
   scrollToTarget(e: any) {
     let name = this.src;
     if (this.src === "Missão") {
@@ -38,6 +42,15 @@ export default class CarouselCard extends Vue {
     }
     e.target.className = `card-container ${name}`;
     this.showTitle(e);
+  }
+
+  scrollToTarget2(e: any) {
+    let name = this.src;
+    if (this.src === "Missão") {
+      name = "Missao";
+    }
+    e.target.className = `card-container ${name}`;
+    this.showTitle2(e.target.parentNode);
   }
 }
 </script>
@@ -207,6 +220,9 @@ export default class CarouselCard extends Vue {
   text-align: left;
 }
 @media (max-width: 600px) {
+  .external-container b {
+    color: black;
+  }
   .external-container p {
     font-family: Helvetica;
     font-size: 18px;
@@ -229,11 +245,14 @@ export default class CarouselCard extends Vue {
   .external-container {
     position: relative;
     display: flex;
-    min-width: 250px;
+    min-width: 300px;
     justify-items: center;
     align-content: space-between;
     height: 100%;
     flex-direction: column;
+    margin-right: 20px;
+
+    text-align: unset;
   }
 
   .external-container-active {
@@ -242,8 +261,11 @@ export default class CarouselCard extends Vue {
     justify-items: center;
     align-content: space-between;
     height: 100%;
-    min-width: 250px;
+    min-width: 300px;
     flex-direction: column;
+    margin-right: 20px;
+
+    text-align: unset;
   }
 }
 </style>

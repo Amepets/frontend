@@ -282,18 +282,44 @@
             <h1 class="mb-3">
               Acompanhe iniciativas e novidades da APA, inscreva-se!
             </h1>
-            <v-form>
-              <v-text-field label="Nome" outlined dense></v-text-field>
-              <v-text-field label="E-mail" outlined dense></v-text-field>
+            <v-form
+              enctype="text/plain"
+              action="mailto:someone@example.com"
+              method="post"
+            >
+              <v-text-field
+                type="text"
+                name="Nome"
+                label="Nome"
+                outlined
+                dense
+              ></v-text-field>
+              <v-text-field
+                type="text"
+                style="display: none;"
+                id="n2"
+                label="E-mail"
+                name="Mensagem"
+                outlined
+                dense
+                value="Gostaria de saber mais sobre a APA!"
+              ></v-text-field>
+              <v-btn
+                type="submit"
+                value="Send"
+                height="56px"
+                rounded
+                color="yellow"
+                block
+              >
+                Fique por dentro
+                <img
+                  width="24px"
+                  class="ml-2"
+                  src="../../../assets/imgs/home/icons/icon-button.svg"
+                />
+              </v-btn>
             </v-form>
-            <v-btn height="56px" rounded color="yellow" block>
-              Fique por dentro
-              <img
-                width="24px"
-                class="ml-2"
-                src="../../../assets/imgs/home/icons/icon-button.svg"
-              />
-            </v-btn>
           </div>
         </div>
         <img
@@ -387,10 +413,11 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import $ from "jquery";
 import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 import CarouselCard from "../../components/CarouselCard.vue";
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 
 window.onload = function() {
   const slider: any = document.getElementById("proposito");
