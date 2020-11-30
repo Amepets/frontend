@@ -20,43 +20,66 @@
         <div :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'">
           <h1
             :class="this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mb-3'"
+            style="width: 376px;
+  height: 147px;
+  margin: 0 0 24px;
+  font-family: Helvetica;
+  font-size: 40px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--101010);
+}"
           >
-            Lorem ipsum sodales nam morbi enim dui per urna at.
+            A adoção é um ato de amor. Faça parte da família APA!
           </h1>
 
           <div
             v-if="!this.$vuetify.breakpoint.smAndDown"
             class="d-flex flex-column botoes"
           >
-            <v-btn
-              width="268px"
-              height="56px"
-              class="mt-4"
-              rounded
-              color="yellow"
+            <a
+              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20adotar%20um%20Pet!"
+              target="_blank"
             >
-              Quero adotar
-              <img
-                width="24px"
-                class="ml-2"
-                src="../../../assets/imgs/home/icons/icon-button.svg"
-              />
-            </v-btn>
-            <v-btn
-              height="56px"
-              width="268px"
-              class="mt-4"
-              outlined
-              rounded
-              color="white"
+              <v-btn
+                width="268px"
+                height="56px"
+                class="mt-4"
+                rounded
+                color="yellow"
+              >
+                Quero adotar
+                <img
+                  width="24px"
+                  class="ml-2"
+                  src="../../../assets/imgs/home/icons/icon-button.svg"
+                />
+              </v-btn>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+              target="_blank"
             >
-              Quero apadrinhar
-              <img
-                width="24px"
-                class="ml-2"
-                src="../../../assets/imgs/icon-button-white.svg"
-              />
-            </v-btn>
+              <v-btn
+                height="56px"
+                width="268px"
+                class="mt-4"
+                outlined
+                rounded
+                color="white"
+              >
+                Quero apadrinhar
+                <img
+                  width="24px"
+                  class="ml-2"
+                  src="../../../assets/imgs/icon-button-white.svg"
+                />
+              </v-btn>
+            </a>
           </div>
         </div>
         <img
@@ -67,29 +90,44 @@
           v-if="this.$vuetify.breakpoint.smAndDown"
           class="d-flex flex-column botoes"
         >
-          <v-btn height="56px" block class="mt-4" rounded color="yellow">
-            Quero adotar
-            <img
-              width="24px"
-              class="ml-2"
-              src="../../../assets/imgs/home/icons/icon-button.svg"
-            />
-          </v-btn>
-          <v-btn
-            height="56px"
-            block
-            class="mt-4"
-            outlined
-            rounded
-            color="white"
+          <a
+            href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20adotar%20um%20Pet!"
+            target="_blank"
           >
-            Quero apadrinhar
-            <img
-              width="24px"
-              class="ml-2"
-              src="../../../assets/imgs/icon-button-white.svg"
-            />
-          </v-btn>
+            <v-btn height="56px" block class="mt-4" rounded color="yellow">
+              Quero adotar
+              <img
+                width="24px"
+                class="ml-2"
+                src="../../../assets/imgs/home/icons/icon-button.svg"
+              />
+            </v-btn>
+            <a
+              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+              target="_blank"
+            >
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+              target="_blank"
+            >
+              <v-btn
+                height="56px"
+                block
+                class="mt-4"
+                outlined
+                rounded
+                color="white"
+              >
+                Quero apadrinhar
+                <img
+                  width="24px"
+                  class="ml-2"
+                  src="../../../assets/imgs/icon-button-white.svg"
+                />
+              </v-btn>
+            </a>
+          </a>
         </div>
       </div>
     </v-flex>

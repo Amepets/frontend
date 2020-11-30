@@ -66,10 +66,33 @@
             Para quem acredita que todos são dignos de amor, nos ajude a
             perpetuar esse ideal! Adote, não compre.
           </p>
+          <router-link to="ajuda">
+            <v-btn
+              width="268px"
+              height="56px"
+              v-if="!this.$vuetify.breakpoint.smAndDown"
+              class="mt-4"
+              rounded
+              color="yellow"
+            >
+              Como posso ajudar
+              <img
+                width="15px"
+                class="ml-2"
+                src="../../../assets/imgs/home/icons/icon-button.svg"
+              />
+            </v-btn>
+          </router-link>
+        </div>
+        <img
+          :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
+          src="../../../assets/imgs/sobreNos/img-historia.png"
+        />
+        <router-link to="ajuda">
           <v-btn
-            width="268px"
             height="56px"
-            v-if="!this.$vuetify.breakpoint.smAndDown"
+            block
+            v-if="this.$vuetify.breakpoint.smAndDown"
             class="mt-4"
             rounded
             color="yellow"
@@ -81,26 +104,7 @@
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
           </v-btn>
-        </div>
-        <img
-          :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
-          src="../../../assets/imgs/sobreNos/img-historia.png"
-        />
-        <v-btn
-          height="56px"
-          block
-          v-if="this.$vuetify.breakpoint.smAndDown"
-          class="mt-4"
-          rounded
-          color="yellow"
-        >
-          Como posso ajudar
-          <img
-            width="15px"
-            class="ml-2"
-            src="../../../assets/imgs/home/icons/icon-button.svg"
-          />
-        </v-btn>
+        </router-link>
       </div>
     </v-flex>
 
@@ -119,21 +123,26 @@
             : 'chamada'
         "
       >
-        <v-btn
-          height="56px"
-          block
-          v-if="this.$vuetify.breakpoint.smAndDown"
-          class="mt-4 mb-6"
-          rounded
-          color="yellow"
+        <a
+          href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20adotar%20um%20Pet!"
+          target="_blank"
         >
-          Quero adotar
-          <img
-            width="15px"
-            class="ml-2"
-            src="../../../assets/imgs/home/icons/icon-button.svg"
-          />
-        </v-btn>
+          <v-btn
+            height="56px"
+            block
+            v-if="this.$vuetify.breakpoint.smAndDown"
+            class="mt-4 mb-6"
+            rounded
+            color="yellow"
+          >
+            Quero adotar
+            <img
+              width="15px"
+              class="ml-2"
+              src="../../../assets/imgs/home/icons/icon-button.svg"
+            />
+          </v-btn>
+        </a>
         <img
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/sobreNos/img-adocao.png"
@@ -151,21 +160,26 @@
             para que nossos animais, que já sofreram o bastante, levem uma vida
             tranquila e cheia de amor.
           </p>
-          <v-btn
-            height="56px"
-            width="268px"
-            v-if="!this.$vuetify.breakpoint.smAndDown"
-            class="mt-4"
-            rounded
-            color="yellow"
+          <a
+            href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20adotar%20um%20Pet!"
+            target="_blank"
           >
-            Quero adotar
-            <img
-              width="15px"
-              class="ml-2"
-              src="../../../assets/imgs/home/icons/icon-button.svg"
-            />
-          </v-btn>
+            <v-btn
+              height="56px"
+              width="268px"
+              v-if="!this.$vuetify.breakpoint.smAndDown"
+              class="mt-4"
+              rounded
+              color="yellow"
+            >
+              Quero adotar
+              <img
+                width="15px"
+                class="ml-2"
+                src="../../../assets/imgs/home/icons/icon-button.svg"
+              />
+            </v-btn>
+          </a>
         </div>
       </div>
     </v-flex>
@@ -219,21 +233,24 @@
             : 'chamada'
         "
       >
-        <v-btn
-          height="56px"
-          block
-          v-if="this.$vuetify.breakpoint.smAndDown"
-          class="mt-4"
-          rounded
-          color="yellow"
-        >
-          Quero ajudar
-          <img
-            width="15px"
-            class="ml-2"
-            src="../../../assets/imgs/home/icons/icon-button.svg"
-          />
-        </v-btn>
+        <router-link to="ajuda">
+          <v-btn
+            height="56px"
+            block
+            v-if="this.$vuetify.breakpoint.smAndDown"
+            class="mt-4"
+            rounded
+            color="yellow"
+          >
+            Quero ajudar
+            <img
+              width="15px"
+              class="ml-2"
+              src="../../../assets/imgs/home/icons/icon-button.svg"
+            />
+          </v-btn>
+        </router-link>
+
         <img
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
           src="../../../assets/imgs/sobreNos/img-ajude-voce-tambem.png"
@@ -247,21 +264,23 @@
             doações e contribuições por apoiadores da causa animal. Seja um
             deles e nos ajude a resgatar cada vez mais animais indefesos!
           </p>
-          <v-btn
-            height="56px"
-            width="268px"
-            v-if="!this.$vuetify.breakpoint.smAndDown"
-            class="mt-4"
-            rounded
-            color="yellow"
-          >
-            Quero ajudar
-            <img
-              width="15px"
-              class="ml-2"
-              src="../../../assets/imgs/home/icons/icon-button.svg"
-            />
-          </v-btn>
+          <router-link to="ajuda">
+            <v-btn
+              height="56px"
+              width="268px"
+              v-if="!this.$vuetify.breakpoint.smAndDown"
+              class="mt-4"
+              rounded
+              color="yellow"
+            >
+              Quero ajudar
+              <img
+                width="15px"
+                class="ml-2"
+                src="../../../assets/imgs/home/icons/icon-button.svg"
+              />
+            </v-btn>
+          </router-link>
         </div>
       </div>
     </v-flex>
@@ -281,11 +300,40 @@
             importante para nós. Seja uma empresa que auxilia no cuidado dos
             indefesos, seja um parceiro da APA!
           </p>
+          <a
+            href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20tenho%20uma%20empresa%20e%20gostaria%20de%20ajudar%20a%20APA!"
+            target="_blank"
+          >
+            <v-btn
+              height="56px"
+              width="377px"
+              v-if="!this.$vuetify.breakpoint.smAndDown"
+              class="mt-4"
+              rounded
+              color="yellow"
+            >
+              Como minha empresa pode ajudar
+              <img
+                width="15px"
+                class="ml-2"
+                src="../../../assets/imgs/home/icons/icon-button.svg"
+              />
+            </v-btn>
+          </a>
+        </div>
+        <img
+          :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
+          src="../../../assets/imgs/sobreNos/img-empresa-tambem-ajuda.png"
+        />
+        <a
+          href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20tenho%20uma%20empresa%20e%20gostaria%20de%20ajudar!"
+          target="_blank"
+        >
           <v-btn
             height="56px"
-            width="377px"
-            v-if="!this.$vuetify.breakpoint.smAndDown"
-            class="mt-4"
+            block
+            v-if="this.$vuetify.breakpoint.smAndDown"
+            class="mt-4 mb-6"
             rounded
             color="yellow"
           >
@@ -296,26 +344,7 @@
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
           </v-btn>
-        </div>
-        <img
-          :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
-          src="../../../assets/imgs/sobreNos/img-empresa-tambem-ajuda.png"
-        />
-        <v-btn
-          height="56px"
-          block
-          v-if="this.$vuetify.breakpoint.smAndDown"
-          class="mt-4 mb-6"
-          rounded
-          color="yellow"
-        >
-          Como minha empresa pode ajudar
-          <img
-            width="15px"
-            class="ml-2"
-            src="../../../assets/imgs/home/icons/icon-button.svg"
-          />
-        </v-btn>
+        </a>
       </div>
     </v-flex>
 
