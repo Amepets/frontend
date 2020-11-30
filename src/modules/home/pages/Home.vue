@@ -23,20 +23,22 @@
               Em defesa e resgate de animais domésticos em situação de risco
             </h1>
           </div>
-          <v-btn
-            width="268px"
-            height="56px"
-            rounded
-            :block="this.$vuetify.breakpoint.smAndDown"
-            color="yellow"
-          >
-            Como posso ajudar
-            <img
-              width="24px"
-              class="ml-2"
-              src="../../../assets/imgs/home/icons/icon-button.svg"
-            />
-          </v-btn>
+          <router-link to="/ajuda">
+            <v-btn
+              width="268px"
+              height="56px"
+              rounded
+              :block="this.$vuetify.breakpoint.smAndDown"
+              color="yellow"
+            >
+              Como posso ajudar
+              <img
+                width="24px"
+                class="ml-2"
+                src="../../../assets/imgs/home/icons/icon-button.svg"
+              />
+            </v-btn>
+          </router-link>
         </div>
         <img
           :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
@@ -55,10 +57,17 @@
     <div class="titlebox">
       <h1>Acreditamos que é possível</h1>
       <h1>mudar realidades</h1>
-      <v-flex class="w-100 d-flex align-center justify-center ">
+      <v-flex class="w-100 d-flex align-center justify-center">
         <div id="proposito" class="proposito">
           <v-list
-            style="padding: 0px 40px 0px 40px; justify-content: space-between; display: flex; background-color: #49cbfc; margin:0; position: relative;"
+            style="
+              padding: 0px 40px 0px 40px;
+              justify-content: space-between;
+              display: flex;
+              background-color: #49cbfc;
+              margin: 0;
+              position: relative;
+            "
           >
             <CarouselCard
               src="Valores"
@@ -84,17 +93,17 @@
     <v-flex class="w-100 d-flex align-center justify-end mb-10">
       <div class="informacoes direita wrpa-invertido">
         <div class="informacoes-texto">
-          <h1 class="mb-3 mr-12">
-            Conheça a trajetória da APA até aqui
-          </h1>
-          <v-btn text class="padding-botao">
-            História da APA
-            <img
-              width="24px"
-              class="ml-1"
-              src="../../../assets/imgs/home/icons/icon-link.svg"
-            />
-          </v-btn>
+          <h1 class="mb-3 mr-12">Conheça a trajetória da APA até aqui</h1>
+          <router-link to="/sobreNos">
+            <v-btn text class="padding-botao">
+              História da APA
+              <img
+                width="24px"
+                class="ml-1"
+                src="../../../assets/imgs/home/icons/icon-link.svg"
+              />
+            </v-btn>
+          </router-link>
         </div>
         <img
           class="ml-6"
@@ -120,7 +129,7 @@
     <v-flex
       class="w-100 d-flex align-center justify-center grey-variant-four pb-6"
     >
-      <div class="chamada chamada-tablet  wrpa-invertido mt-10">
+      <div class="chamada chamada-tablet wrpa-invertido mt-10">
         <img
           class="mt-6"
           :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
@@ -151,29 +160,29 @@
         "
       >
         <div :class="!this.$vuetify.breakpoint.smAndDown ? 'mr-16 my-12' : ''">
-          <h1 class="mb-3">
-            Mais de 20 mil cães e gatos resgatados
-          </h1>
+          <h1 class="mb-3">Mais de 20 mil cães e gatos resgatados</h1>
           <p class="mb-3">
             O número de animais resgatados pela APA já ultrapassou os 20 mil.
             Sempre atentos aos animais em situações de risco, buscamos aumentar
             nossa capacidade para atender números cada vez maiores. Com a sua
             ajuda, podemos ir muito além!
           </p>
-          <v-btn
-            v-if="!this.$vuetify.breakpoint.smAndDown"
-            width="268px"
-            height="56px"
-            rounded
-            color="yellow"
-          >
-            Quero ajudar
-            <img
-              width="24px"
-              class="ml-2"
-              src="../../../assets/imgs/home/icons/icon-button.svg"
-            />
-          </v-btn>
+          <router-link to="/ajuda">
+            <v-btn
+              v-if="!this.$vuetify.breakpoint.smAndDown"
+              width="268px"
+              height="56px"
+              rounded
+              color="yellow"
+            >
+              Quero ajudar
+              <img
+                width="24px"
+                class="ml-2"
+                src="../../../assets/imgs/home/icons/icon-button.svg"
+              />
+            </v-btn>
+          </router-link>
         </div>
         <img
           class="mt-2"
@@ -201,51 +210,37 @@
 
     <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
       <div class="chamada my-12 wrpa-invertido chamada-tablet py-12">
-        <v-btn
-          height="56px"
-          class="mt-4"
-          outlined
-          rounded
-          v-if="this.$vuetify.breakpoint.smAndDown"
-          color="white"
-          block
+        <a
+          href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+          target="_blank"
         >
-          Quero apadrinhar
-          <img
-            width="24px"
-            class="ml-2"
-            src="../../../assets/imgs/icon-button-white.svg"
-          />
-        </v-btn>
-        <v-btn
-          height="56px"
-          v-if="this.$vuetify.breakpoint.smAndDown"
-          class="mt-8"
-          rounded
-          block
-          color="yellow"
-        >
-          Quero adotar
-          <img
-            width="24px"
-            class="ml-2"
-            src="../../../assets/imgs/home/icons/icon-button.svg"
-          />
-        </v-btn>
-
-        <img
-          :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
-          src="../../../assets/imgs/home/ilustracao-adote-um-amigo.png"
-        />
-        <div :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-16' : ''">
-          <h1 class="mb-3">
-            A adoção é um ato de amor. Faça parte de nossa família!
-          </h1>
           <v-btn
-            width="365px"
             height="56px"
-            v-if="!this.$vuetify.breakpoint.smAndDown"
+            class="mt-4"
+            outlined
             rounded
+            v-if="this.$vuetify.breakpoint.smAndDown"
+            color="white"
+            block
+          >
+            Quero apadrinhar
+            <img
+              width="24px"
+              class="ml-2"
+              src="../../../assets/imgs/icon-button-white.svg"
+            />
+          </v-btn>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20gostaria%20de%20adotar%20um%20Pet!"
+          target="_blank"
+        >
+          <v-btn
+            height="56px"
+            v-if="this.$vuetify.breakpoint.smAndDown"
+            class="mt-8"
+            rounded
+            block
             color="yellow"
           >
             Quero adotar
@@ -255,29 +250,62 @@
               src="../../../assets/imgs/home/icons/icon-button.svg"
             />
           </v-btn>
-          <v-btn
-            v-if="!this.$vuetify.breakpoint.smAndDown"
-            height="56px"
-            width="365px"
-            class="mt-4"
-            outlined
-            rounded
-            color="white"
+        </a>
+        <img
+          :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
+          src="../../../assets/imgs/home/ilustracao-adote-um-amigo.png"
+        />
+        <div :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-16' : ''">
+          <h1 class="mb-3">
+            A adoção é um ato de amor. Faça parte de nossa família!
+          </h1>
+          <a
+            href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20gostaria%20de%20adotar%20um%20Pet!"
+            target="_blank"
           >
-            Quero apadrinhar
-            <img
-              width="24px"
-              class="ml-2"
-              src="../../../assets/imgs/icon-button-white.svg"
-            />
-          </v-btn>
+            <v-btn
+              width="365px"
+              height="56px"
+              v-if="!this.$vuetify.breakpoint.smAndDown"
+              rounded
+              color="yellow"
+            >
+              Quero adotar
+              <img
+                width="24px"
+                class="ml-2"
+                src="../../../assets/imgs/home/icons/icon-button.svg"
+              />
+            </v-btn>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+            target="_blank"
+          >
+            <v-btn
+              v-if="!this.$vuetify.breakpoint.smAndDown"
+              height="56px"
+              width="365px"
+              class="mt-4"
+              outlined
+              rounded
+              color="white"
+            >
+              Quero apadrinhar
+              <img
+                width="24px"
+                class="ml-2"
+                src="../../../assets/imgs/icon-button-white.svg"
+              />
+            </v-btn>
+          </a>
         </div>
       </div>
     </v-flex>
 
     <v-flex class="w-100 d-flex align-center justify-end pb-12">
       <div class="informacoes direita wrpa-invertido">
-        <div class="informacoes-texto ">
+        <div class="informacoes-texto">
           <div class="border">
             <h1 class="mb-3">
               Acompanhe iniciativas e novidades da APA, inscreva-se!
@@ -337,9 +365,9 @@
       </div>
     </v-flex>
 
-    <v-flex class="w-100 d-flex  align-center justify-center py-12">
-      <div class=" chamada d-flex flex-column align-center justify-center">
-        <div style="width:60%; text-align:center">
+    <v-flex class="w-100 d-flex align-center justify-center py-12">
+      <div class="chamada d-flex flex-column align-center justify-center">
+        <div style="width: 60%; text-align: center">
           <h1>Marcas que acreditam na APA Uberlândia</h1>
         </div>
         <div class="d-flex flex-wrap align-center justify-center">
@@ -416,8 +444,6 @@ import { Component, Vue } from "vue-property-decorator";
 import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 import CarouselCard from "../../components/CarouselCard.vue";
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 
 window.onload = function() {
   const slider: any = document.getElementById("proposito");

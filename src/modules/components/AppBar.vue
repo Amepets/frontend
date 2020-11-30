@@ -11,19 +11,18 @@
           <router-link class="mr-8" to="/">Início</router-link>
           <router-link class="mr-8" to="/ajuda">Como posso ajudar</router-link>
           <router-link class="mr-8" to="/adocao">Adoção</router-link>
-          <router-link to="/sobreNos">
-            Sobre nós
-          </router-link>
+          <router-link to="/sobreNos"> Sobre nós </router-link>
         </div>
         <div>
-          <v-btn rounded color="yellow">
-            Ajudar
-            <img
-              width="24px"
-              class="ml-2"
-              src="../../assets/imgs/home/icons/icon-button.svg"
-            />
-          </v-btn>
+          <router-link to="/ajuda"
+            ><v-btn rounded color="yellow">
+              Ajudar
+              <img
+                width="24px"
+                class="ml-2"
+                src="../../assets/imgs/home/icons/icon-button.svg"
+              /> </v-btn
+          ></router-link>
         </div>
       </div>
     </v-flex>
