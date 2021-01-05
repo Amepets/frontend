@@ -101,15 +101,32 @@
         </div>
       </v-flex>
     </div>
-    <v-flex class="w-100 d-flex align-center justify-end mb-10">
-      <div class="informacoes direita wrpa-invertido">
+
+    <v-flex class="w-100 d-flex align-center">
+      <img
+        width="100%"
+        src="../../../assets/imgs/home/session-organic-form-blue-two.svg"
+      />
+    </v-flex>
+
+    <v-flex class="w-100 d-flex align-center justify-center mb-10">
+      <div
+        :class="
+          this.$vuetify.breakpoint.smAndDown
+            ? 'chamada wrpa-invertido'
+            : 'chamada'
+        "
+      >
         <div
           data-aos-anchor-placement="top-bottom"
           data-aos="fade-right"
           data-aos-duration="800"
-          class="informacoes-texto"
         >
-          <h1 class="mb-3 mr-12">Conheça a trajetória da APA até aqui</h1>
+          <h1
+            :class="!this.$vuetify.breakpoint.smAndDown ? 'mb-3 mr-12' : 'mb-3'"
+          >
+            Conheça a trajetória da APA até aqui
+          </h1>
           <router-link to="/sobreNos">
             <v-btn text class="padding-botao">
               História da APA
@@ -131,12 +148,12 @@
           class="ml-6"
           v-if="!this.$vuetify.breakpoint.smAndDown"
           width="50%"
-          src="../../../assets/imgs/home/img-sobre-nos-desktop.png"
+          src="../../../assets/imgs/home/img-historia-APA.svg"
         />
         <img
           v-else
           width="100%"
-          src="../../../assets/imgs/home/img-sobre-nos.png"
+          src="../../../assets/imgs/home/img-historia-APA.svg"
         />
       </div>
     </v-flex>
@@ -380,7 +397,7 @@
               ></v-text-field>
               <v-text-field
                 type="text"
-                style="display: none;"
+                style="display: none"
                 id="n2"
                 label="E-mail"
                 name="Mensagem"
@@ -501,7 +518,7 @@ import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 import CarouselCard from "../../components/CarouselCard.vue";
 
-window.onload = function() {
+window.onload = function () {
   const slider: any = document.getElementById("proposito");
   let isDown = false;
   let startX: number;
