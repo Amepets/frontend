@@ -1,8 +1,6 @@
 <template>
   <div class="external-container">
-    <div @click="scrollToTarget" :class="className">
-      <tt @click="scrollToTarget2" class="title-cd">{{ src }}</tt>
-    </div>
+    <div @click="scrollToTarget" :class="className"></div>
     <b class="txt">{{ text }}</b>
   </div>
 </template>

@@ -80,23 +80,34 @@
               position: relative;
             "
           >
-            <CarouselCard
-              src="Valores"
-              text="Nos baseamos em três pilares: a
+            <div class="hehehe">
+              <h1>Valores</h1>
+              <CarouselCard
+                src="Valores"
+                text="Nos baseamos em três pilares: a
             empatia, o respeito e a ética. Temos o compromisso de realizar um
             trabalho íntegro, transparente e honesto. "
-              className="card-container Valores-blank"
-            />
-            <CarouselCard
-              src="Missão"
-              text="Acolher e oportunizar um novo lar para aqueles que não tem voz e são  dignos de muito amor.  "
-              className="card-container Missão-blank"
-            />
-            <CarouselCard
-              src="Visão"
-              text="Um de nossos sonhos é poder unir cada um de nossos animais com aqueles que amam e os defendem. "
-              className="card-container Visão-blank"
-            />
+                className="card-container Valores-blank"
+              />
+            </div>
+            <div class="hehehe">
+              <h1>Missão</h1>
+
+              <CarouselCard
+                src="Missão"
+                text="Acolher e oportunizar um novo lar para aqueles que não tem voz e são  dignos de muito amor.  "
+                className="card-container Missão-blank"
+              />
+            </div>
+            <div class="hehehe">
+              <h1>Visão</h1>
+
+              <CarouselCard
+                src="Visão"
+                text="Um de nossos sonhos é poder unir cada um de nossos animais com aqueles que amam e os defendem. "
+                className="card-container Visão-blank"
+              />
+            </div>
           </v-list>
         </div>
       </v-flex>
@@ -272,7 +283,7 @@
     <v-flex class="w-100 d-flex align-center justify-center blue-variant-three">
       <div class="chamada my-12 wrpa-invertido chamada-tablet py-12">
         <a
-          href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+          href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
           target="_blank"
         >
           <v-btn
@@ -296,7 +307,7 @@
           </v-btn>
         </a>
         <a
-          href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20gostaria%20de%20adotar%20um%20Pet!"
+          href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20gostaria%20de%20adotar%20um%20Pet!"
           target="_blank"
         >
           <v-btn
@@ -327,7 +338,7 @@
             A adoção é um ato de amor. Faça parte de nossa família!
           </h1>
           <a
-            href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20gostaria%20de%20adotar%20um%20Pet!"
+            href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20gostaria%20de%20adotar%20um%20Pet!"
             target="_blank"
           >
             <v-btn
@@ -349,7 +360,7 @@
             </v-btn>
           </a>
           <a
-            href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+            href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
             target="_blank"
           >
             <v-btn
@@ -385,7 +396,7 @@
             </h1>
             <v-form
               enctype="text/plain"
-              action="mailto:someone@example.com"
+              action="mailto:diretoria@apauberlandia.org.br"
               method="post"
             >
               <v-text-field
@@ -518,7 +529,7 @@ import AppBar from "../../components/AppBar.vue";
 import Footer from "../../components/Footer.vue";
 import CarouselCard from "../../components/CarouselCard.vue";
 
-window.onload = function () {
+window.onload = function() {
   const slider: any = document.getElementById("proposito");
   let isDown = false;
   let startX: number;
@@ -553,6 +564,17 @@ export default class Home extends Vue {
 </script>
 
 <style>
+.hehehe {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.hehehe h1 {
+  margin-left: -20px;
+}
+
 .placeholder {
   position: relative;
   display: block;

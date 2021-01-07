@@ -45,7 +45,7 @@
             class="d-flex flex-column botoes"
           >
             <a
-              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20adotar%20um%20Pet!"
+              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20Gostaria%20de%20adotar%20um%20Pet!"
               target="_blank"
             >
               <v-btn
@@ -67,7 +67,7 @@
               </v-btn>
             </a>
             <a
-              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
               target="_blank"
             >
               <v-btn
@@ -103,7 +103,7 @@
           class="d-flex flex-column botoes"
         >
           <a
-            href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20adotar%20um%20Pet!"
+            href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20Gostaria%20de%20adotar%20um%20Pet!"
             target="_blank"
           >
             <v-btn height="56px" block class="mt-4" rounded color="yellow">
@@ -115,12 +115,12 @@
               />
             </v-btn>
             <a
-              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
               target="_blank"
             >
             </a>
             <a
-              href="https://api.whatsapp.com/send?phone=5534998368539&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
+              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20Gostaria%20de%20apadrinhar!"
               target="_blank"
             >
               <v-btn
