@@ -220,7 +220,7 @@ import ModalDadosBancarios from "../../components/modais/DadosBancarios.vue";
 import ModalPontosColeta from "../../components/modais/PontosColeta.vue";
 
 @Component({
-  components: { AppBar, Footer, ModalDadosBancarios, ModalPontosColeta }
+  components: { AppBar, Footer, ModalDadosBancarios, ModalPontosColeta },
 })
 export default class Ajuda extends Vue {
   private isOpenDadosBancarios = false;

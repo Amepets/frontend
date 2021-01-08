@@ -66,12 +66,13 @@
     </v-flex>
 
     <div class="titlebox">
-      <h1>Acreditamos que é possível</h1>
-      <h1>mudar realidades</h1>
-      <v-flex class="w-100 d-flex align-center justify-center">
-        <div id="proposito" class="proposito">
-          <v-list
-            style="
+      <div class="carrossel">
+        <h1>Acreditamos que é possível</h1>
+        <h1>mudar realidades</h1>
+        <v-flex class="w-100 d-flex align-center justify-center">
+          <div id="proposito" class="proposito">
+            <v-list
+              style="
               padding: 0px 40px 0px 40px;
               justify-content: space-between;
               display: flex;
@@ -79,38 +80,39 @@
               margin: 0;
               position: relative;
             "
-          >
-            <div class="hehehe">
-              <h1>Valores</h1>
-              <CarouselCard
-                src="Valores"
-                text="Nos baseamos em três pilares: a
+            >
+              <div class="hehehe">
+                <h1>Valores</h1>
+                <CarouselCard
+                  src="Valores"
+                  text="Nos baseamos em três pilares: a
             empatia, o respeito e a ética. Temos o compromisso de realizar um
             trabalho íntegro, transparente e honesto. "
-                className="card-container Valores-blank"
-              />
-            </div>
-            <div class="hehehe">
-              <h1>Missão</h1>
+                  className="card-container Valores-blank"
+                />
+              </div>
+              <div class="hehehe">
+                <h1>Missão</h1>
 
-              <CarouselCard
-                src="Missão"
-                text="Acolher e oportunizar um novo lar para aqueles que não tem voz e são  dignos de muito amor.  "
-                className="card-container Missão-blank"
-              />
-            </div>
-            <div class="hehehe">
-              <h1>Visão</h1>
+                <CarouselCard
+                  src="Missão"
+                  text="Acolher e oportunizar um novo lar para aqueles que não tem voz e são  dignos de muito amor.  "
+                  className="card-container Missão-blank"
+                />
+              </div>
+              <div class="hehehe">
+                <h1>Visão</h1>
 
-              <CarouselCard
-                src="Visão"
-                text="Um de nossos sonhos é poder unir cada um de nossos animais com aqueles que amam e os defendem. "
-                className="card-container Visão-blank"
-              />
-            </div>
-          </v-list>
-        </div>
-      </v-flex>
+                <CarouselCard
+                  src="Visão"
+                  text="Um de nossos sonhos é poder unir cada um de nossos animais com aqueles que amam e os defendem. "
+                  className="card-container Visão-blank"
+                />
+              </div>
+            </v-list>
+          </div>
+        </v-flex>
+      </div>
     </div>
 
     <v-flex class="w-100 d-flex align-center">
@@ -251,9 +253,6 @@
           </router-link>
         </div>
         <img
-          data-aos-anchor-placement="top-bottom"
-          data-aos="fade-left"
-          data-aos-duration="800"
           class="mt-2"
           :width="!this.$vuetify.breakpoint.smAndDown ? '50%' : '100%'"
           src="../../../assets/imgs/home/img-oque-fazemos-02.png"
@@ -437,7 +436,7 @@
         <img
           v-if="!this.$vuetify.breakpoint.smAndDown"
           class="ml-16"
-          width="50%"
+          width="65%"
           src="../../../assets/imgs/home/img-news-desktop.png"
         />
         <img
@@ -603,6 +602,10 @@ export default class Home extends Vue {
   background-color: var(--v-blue-variant-three-base);
   padding-top: 20px;
   display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .titlebox h1 {
@@ -654,7 +657,18 @@ export default class Home extends Vue {
   padding: 0 !important;
 }
 
+@media (min-width: 960px) {
+  .carrossel {
+    max-width: 960px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 960px) {
+  .carrossel {
+    width: 100%;
+  }
+
   .chamada {
     padding: 40px 0px 40px 10px;
   }
