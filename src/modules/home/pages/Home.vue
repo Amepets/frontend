@@ -659,6 +659,7 @@ export default class Home extends Vue {
 
 @media (min-width: 960px) {
   .carrossel {
+    max-width: 1200px;
     width: 100%;
   }
 }
