@@ -54,10 +54,6 @@ export default class CarouselCard extends Vue {
 </script>
 
 <style>
-.external-container b {
-  color: var(--v-blue-variant-three-base);
-}
-
 .txt {
   font-family: Helvetica;
   font-size: 18px;
@@ -83,10 +79,10 @@ export default class CarouselCard extends Vue {
 .external-container {
   position: relative;
   display: flex;
-  min-width: 360px;
   justify-items: center;
   align-content: space-between;
   height: 100%;
+  min-width: 360px;
   flex-direction: column;
 }
 
@@ -156,7 +152,7 @@ export default class CarouselCard extends Vue {
 }
 
 .Missão-blank {
-  background-image: url("../../assets/imgs/carousel/bg-missao-blank.png");
+  background-image: url("../../assets/imgs/carousel/bg-missao.png");
   color: white;
   font-family: Helvetica;
   font-size: 18px;
@@ -181,7 +177,7 @@ export default class CarouselCard extends Vue {
   text-align: left;
 }
 .Valores-blank {
-  background-image: url("../../assets/imgs/carousel/bg-valores-blank.png");
+  background-image: url("../../assets/imgs/carousel/bg-valores.png");
   color: white;
   font-family: Helvetica;
   font-size: 18px;
@@ -206,7 +202,7 @@ export default class CarouselCard extends Vue {
 }
 
 .Visão-blank {
-  background-image: url("../../assets/imgs/carousel/bg-visao-blank.png");
+  background-image: url("../../assets/imgs/carousel/bg-visao.png");
   color: black;
   font-family: Helvetica;
   font-size: 18px;

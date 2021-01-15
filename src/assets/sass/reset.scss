@@ -1,23 +1,24 @@
 * {
-    outline: 0 !important;
-    box-sizing: border-box !important;
+  outline: 0 !important;
+  box-sizing: border-box !important;
 }
 
-body {
-    -webkit-font-smoothing: antialiased !important;
+body, html {
+  -webkit-font-smoothing: antialiased !important;
+  touch-action: pan-x pan-y;
+  overflow-x: hidden;
 }
 
 p {
-    margin: 0 !important;
-    padding: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 a {
-    text-decoration: none !important;
-    color: inherit !important;
-
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 button {
-    text-transform: none !important;
+  text-transform: none !important;
 }
