@@ -3,11 +3,13 @@
     <v-flex class="w-100 d-flex align-center justify-center">
       <div class="app-bar-conteudo">
         <div class="d-flex align-center justify-center">
-          <img
+          <router-link to="/">
+            <img
             width="50px"
             class="mr-8"
             src="../../assets/imgs/logo-apa-black.svg"
           />
+          </router-link>
           <router-link class="mr-8" to="/">Início</router-link>
           <router-link class="mr-8" to="/ajuda">Como posso ajudar</router-link>
           <router-link class="mr-8" to="/adocao">Adoção</router-link>

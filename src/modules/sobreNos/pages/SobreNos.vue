@@ -54,7 +54,7 @@
           data-aos-duration="800"
           :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'"
         >
-          <h1 class="mb-3">Nossa História</h1>
+          <h2 class="mb-3">Nossa História</h2>
           <p>
             Associação de Proteção Animal em Uberlândia (APA) surgiu em 1996,
             tendo como objetivo principal a defesa de animais domésticos em
@@ -174,7 +174,7 @@
           data-aos-duration="800"
           :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4 mt-2' : 'ml-12'"
         >
-          <h1 class="mb-3">Adoção responsável</h1>
+          <h2 class="mb-3">Adoção responsável</h2>
           <p>
             Adotar um animal é um ato de amor, mas que requer cuidados e
             responsabilidade.<br />
@@ -226,7 +226,7 @@
           data-aos-duration="800"
           :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'"
         >
-          <h1 class="mb-3">Nossa estrutura</h1>
+          <h2 class="mb-3">Nossa estrutura</h2>
           <p>
             A APA é uma é organização sem fins lucrativos, criada por um ideal
             em comum: a defesa de animais domésticos em situação de risco.
@@ -292,14 +292,14 @@
         <div
           :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4 mt-6' : 'ml-12'"
         >
-          <h1
+          <h2
             data-aos-anchor-placement="top-bottom"
             data-aos="fade-left"
             data-aos-duration="800"
             class="mb-3"
           >
             Ajude a APA
-          </h1>
+          </h2>
           <p>
             Toda a verba para manutenção e cuidados com nossos animais vem de
             doações e contribuições por apoiadores da causa animal. Seja um
@@ -343,7 +343,7 @@
           data-aos-duration="800"
           :class="this.$vuetify.breakpoint.smAndDown ? 'mb-4' : 'mr-12'"
         >
-          <h1 class="mb-3">Empresas que acreditam neste sonho</h1>
+          <h2 class="mb-3">Empresas que acreditam neste sonho</h2>
           <p>
             As parcerias com empresas que acreditam na causa animal são muito
             importante para nós. Seja uma empresa que auxilia no cuidado dos

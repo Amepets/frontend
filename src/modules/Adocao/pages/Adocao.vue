@@ -23,19 +23,6 @@
             data-aos="fade-up"
             data-aos-duration="800"
             :class="this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mb-3'"
-            style="width: 376px;
-  height: 147px;
-  margin: 0 0 24px;
-  font-family: Helvetica;
-  font-size: 40px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--101010);
-}"
           >
             A adoção é um ato de amor. Faça parte da família APA!
           </h1>

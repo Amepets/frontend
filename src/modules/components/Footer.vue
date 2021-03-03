@@ -16,7 +16,7 @@
         <div class="flex-grow-1">
           <p class="border-titulos font-weight-bold">Contatos</p>
           <p>apauberlandia@gmail.com</p>
-          <p>0800 000 0000</p>
+          <p>(34) 99677-0358</p>
         </div>
 
         <div
@@ -35,21 +35,21 @@
                 this.$vuetify.breakpoint.smAndDown ? 'margin-right:80px' : ''
               "
             >
-              <p><router-link to="/">Início</router-link></p>
-              <p><router-link to="/ajuda">Como posso ajudar</router-link></p>
+              <p class="link"><router-link to="/">Início</router-link></p>
+              <p class="link"><router-link to="/ajuda">Como posso ajudar</router-link></p>
             </div>
             <div>
-              <p><router-link to="/adocao">Adoção</router-link></p>
-              <p><router-link to="/sobreNos">Sobre nós</router-link></p>
+              <p class="link"><router-link to="/adocao">Adoção</router-link></p>
+              <p class="link"><router-link to="/sobreNos">Sobre nós</router-link></p>
             </div>
           </div>
         </div>
 
         <div
           v-if="!this.$vuetify.breakpoint.smAndDown"
-          class="flex-grow-1 d-flex justify-space-between ml-4"
+          class="flex-grow-1 d-flex justify-start ml-4"
         >
-          <div class="redes_sociais d-flex justify-center align-center">
+          <div class="redes_sociais d-flex justify-center align-center mr-4">
             <a href="https://www.instagram.com/apa.uberlandia/" target="_blank"
               ><img
                 class="mb-n2"
@@ -63,22 +63,16 @@
                 src="../../assets/imgs/redesSociais/ic-facebook.svg"
             /></a>
           </div>
-          <div class="redes_sociais d-flex justify-center align-center">
-            <img src="../../assets/imgs/redesSociais/ic-linkedin.svg" />
-          </div>
-          <div class="redes_sociais d-flex justify-center align-center">
-            <img src="../../assets/imgs/redesSociais/ic-youtube.svg" />
-          </div>
         </div>
       </div>
 
       <div v-if="this.$vuetify.breakpoint.xs" class="border_top pt-6">
         <p class="border-titulos font-weight-bold">Páginas</p>
         <div>
-          <p><router-link to="/">Início</router-link></p>
-          <p><router-link to="/ajuda">Como posso ajudar</router-link></p>
-          <p><router-link to="/adocao">Adoção</router-link></p>
-          <p><router-link to="/sobreNos">Sobre nós</router-link></p>
+          <p class="link"><router-link to="/">Início</router-link></p>
+          <p class="link"><router-link to="/ajuda">Como posso ajudar</router-link></p>
+          <p class="link"><router-link to="/adocao">Adoção</router-link></p>
+          <p class="link"><router-link to="/sobreNos">Sobre nós</router-link></p>
         </div>
       </div>
 
@@ -99,12 +93,6 @@
               class="mb-n2"
               src="../../assets/imgs/redesSociais/ic-facebook.svg"
           /></a>
-        </div>
-        <div class="redes_sociais d-flex justify-center align-center mr-5">
-          <img src="../../assets/imgs/redesSociais/ic-linkedin.svg" />
-        </div>
-        <div class="redes_sociais d-flex justify-center align-center mr-5">
-          <img src="../../assets/imgs/redesSociais/ic-youtube.svg" />
         </div>
       </div>
     </div>
@@ -135,5 +123,9 @@ export default class Footer extends Vue {}
 .border_top {
   margin-top: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.link:hover {
+  color:teal;
 }
 </style>
