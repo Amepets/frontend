@@ -22,7 +22,7 @@
               this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mr-12 mb-3'
             "
           >
-            Conheça a trajetória de 24 anos da APA
+            Conheça a trajetória de {{data_formatada - 1996}} anos da APA 
           </h1>
         </div>
         <img
@@ -70,7 +70,7 @@
             encontrados em condições inacreditáveis e desumanas. Além disso,
             nossas ações preventivas foram responsáveis pela castração em massa
             de mais de 300 animais domésticos somente no ano de 2013. Mesmo após
-            24 anos de atuação, ainda há um longo caminho pela frente. Hoje, o
+            {{data_formatada - 1996}} anos de atuação, ainda há um longo caminho pela frente. Hoje, o
             espaço abriga cerca de 500 cães e gatos, todos à procura de um lar.
             <br />
             <br />
@@ -414,9 +414,17 @@ import Footer from "../../components/Footer.vue";
 
 @Component({ components: { AppBar, Footer } })
 export default class SobreNos extends Vue {
+
+  private hoje = new Date();
+
+  private data_formatada = this.hoje.getFullYear();
+
   public created() {
     window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
   }
+
+  
+
 }
 </script>
 

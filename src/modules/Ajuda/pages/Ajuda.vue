@@ -24,8 +24,7 @@
             data-aos-duration="800"
             :class="this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mb-3'"
           >
-            Ajude a manter viva a causa animal, sua contribuição é muito
-            importante para nós
+            A sua ajuda é muito importante. Faça uma contribuição.
           </h1>
 
           <div
@@ -53,8 +52,8 @@
                   class="mb-2"
                   src="../../../assets/imgs/ajuda/ic-donation-money.svg"
                 />
-                <p>Doação em</p>
-                <p>Dinheiro</p>
+                <p style="font-weight: 600;">Doação em</p>
+                <p style="font-weight: 600;">Dinheiro</p>
               </div>
             </v-btn>
             <v-btn
@@ -78,8 +77,8 @@
                   class="mb-2"
                   src="../../../assets/imgs/ajuda/ic-donation-medicine.svg"
                 />
-                <p>Remédios e</p>
-                <p>Produtos</p>
+                <p style="font-weight: 600;">Remédios e</p>
+                <p style="font-weight: 600;">Produtos</p>
               </div>
             </v-btn>
             <a
@@ -106,8 +105,8 @@
                     class="mb-2"
                     src="../../../assets/imgs/ajuda/ic-voluntery.svg"
                   />
-                  <p>Tornar-se</p>
-                  <p>Voluntário</p>
+                  <p style="font-weight: 600;">Tornar-se</p>
+                  <p style="font-weight: 600;">Voluntário</p>
                 </div>
               </v-btn>
             </a>
@@ -143,8 +142,8 @@
                 class="mb-2"
                 src="../../../assets/imgs/ajuda/ic-donation-money.svg"
               />
-              <p>Doação em</p>
-              <p>Dinheiro</p>
+              <p style="font-weight: 600;">Doação em</p>
+              <p style="font-weight: 600;">Dinheiro</p>
             </div>
           </v-btn>
           <v-btn
@@ -165,8 +164,8 @@
                 class="mb-2"
                 src="../../../assets/imgs/ajuda/ic-donation-medicine.svg"
               />
-              <p>Remédios e</p>
-              <p>Produtos</p>
+              <p style="font-weight: 600;">Remédios e</p>
+              <p style="font-weight: 600;">Produtos</p>
             </div>
           </v-btn>
 
@@ -191,8 +190,8 @@
                   class="mb-2"
                   src="../../../assets/imgs/ajuda/ic-voluntery.svg"
                 />
-                <p>Tornar-se</p>
-                <p>Voluntário</p>
+                <p style="font-weight: 600;">Tornar-se</p>
+                <p style="font-weight: 600;">Voluntário</p>
                 <p></p>
               </div>
             </a>

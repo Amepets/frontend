@@ -15,15 +15,13 @@
       >
         <div>
           <div
-            :style="
-              this.$vuetify.breakpoint.smAndDown ? 'text-align:center' : ''
-            "
           >
             <h1
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-right"
               data-aos-duration="800"
               class="mr-6 mb-3"
+              :style="this.$vuetify.breakpoint.mdAndUp ? 'text-align: left;' : 'text-align: center;'"
             >
               Em defesa e resgate de animais domésticos em situação de risco
             </h1>
@@ -67,8 +65,10 @@
 
     <div class="titlebox">
       <div class="carrossel">
-        <h1>Acreditamos que é possível</h1>
-        <h1>mudar realidades</h1>
+        <div class="ml-10">
+          <h2>Acreditamos que é possível</h2>
+          <h2>mudar realidades</h2>
+        </div>
         <v-flex class="w-100 d-flex align-center justify-center">
           <div id="proposito" class="proposito">
             <v-list
@@ -135,11 +135,11 @@
           data-aos="fade-right"
           data-aos-duration="800"
         >
-          <h1
+          <h2
             :class="!this.$vuetify.breakpoint.smAndDown ? 'mb-3 mr-12' : 'mb-3'"
           >
             Conheça a trajetória da APA até aqui
-          </h1>
+          </h2>
           <router-link to="/sobreNos">
             <v-btn text class="padding-botao">
               História da APA
@@ -197,7 +197,7 @@
           data-aos-duration="1000"
           :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-16' : ''"
         >
-          <h1 class="mb-3">Entenda o que fazemos</h1>
+          <h2 class="mb-3">Entenda o que fazemos</h2>
           <p>
             A APA atua em várias frentes para contribuir para a causa animal.
             Além do resgate de cães e gatos em situações de risco, promovemos
@@ -220,7 +220,7 @@
         "
       >
         <div :class="!this.$vuetify.breakpoint.smAndDown ? 'mr-16 my-12' : ''">
-          <h1 class="mb-3">Mais de 20 mil cães e gatos resgatados</h1>
+          <h2 class="mb-3">Mais de 20 mil cães e gatos resgatados</h2>
           <p
             data-aos-anchor-placement="top-bottom"
             data-aos="fade-right"
@@ -333,7 +333,7 @@
           src="../../../assets/imgs/home/ilustracao-adote-um-amigo.png"
         />
         <div :class="!this.$vuetify.breakpoint.smAndDown ? 'ml-16' : ''">
-          <h1 class="mb-3">
+          <h1 class="mb-3" :style="this.$vuetify.breakpoint.mdAndUp ? 'text-align: left;' : 'text-align: center;'">
             A adoção é um ato de amor. Faça parte de nossa família!
           </h1>
           <a
@@ -390,9 +390,9 @@
       <div class="informacoes direita wrpa-invertido">
         <div class="informacoes-texto">
           <div class="border">
-            <h1 class="mb-3">
+            <h2 class="mb-3">
               Acompanhe iniciativas e novidades da APA, inscreva-se!
-            </h1>
+            </h2>
             <v-form
               enctype="text/plain"
               action="mailto:diretoria@apauberlandia.org.br"
@@ -450,8 +450,8 @@
 
     <v-flex class="w-100 d-flex align-center justify-center py-12">
       <div class="chamada d-flex flex-column align-center justify-center">
-        <div style="width: 60%; text-align: center">
-          <h1>Marcas que acreditam na APA Uberlândia</h1>
+        <div style="width: 40%;" class="mb-2" >
+          <h2 style="text-align: center">Marcas que acreditam na APA Uberlândia</h2>
         </div>
         <div class="d-flex flex-wrap align-center justify-center">
           <img
@@ -609,7 +609,7 @@ export default class Home extends Vue {
   flex-direction: column;
 }
 .titlebox h1 {
-  font-family: Helvetica;
+  font-family: 'Helvetica';
   font-size: 40px;
   font-weight: 500;
   font-stretch: normal;
@@ -715,7 +715,7 @@ export default class Home extends Vue {
 
   .titlebox h1 {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;

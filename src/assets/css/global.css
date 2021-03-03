@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Helvetica+Neue");
+@import url("https://fonts.googleapis.com/css?family=Helvetica");
 
 h1 {
   font-family: "Helvetica";
@@ -26,3 +26,68 @@ p {
 
   color: #101010;
 }
+
+h2 {
+  font-family: 'Helvetica';
+  font-size: 38px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #101010;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-family: 'Helvetica';
+    font-size: 40px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #101010;
+  }
+  
+  h2 {
+    font-family: 'Helvetica';
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #101010;
+  }
+  }
+
+@media (max-width: 600px) {
+h1 {
+  font-family: 'Helvetica';
+  font-size: 32px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #101010;
+}
+
+h2 {
+  font-family: 'Helvetica';
+  font-size: 28px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #101010;
+}
+}
+
