@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" href="<%= BASE_URL %>logo-apa-black.svg" />
+    <title>APA Uberlândia</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
+    />
+  </head>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <link rel='icon' href="<%= BASE_URL %>logo-apa-black.svg">
-  <title>APA Uberlândia</title>
-</head>
-
-<body>
-  <noscript>
-    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
-      Please enable it to continue.</strong>
-  </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
-  <script>
-    document.addEventListener('gesturestart', function (e) {
-    e.preventDefault();
-});
-document.addEventListener('touchmove', function(event) {
-    event = event.originalEvent || event;
-    if(event.scale > 1) {
-      event.preventDefault();
-    }
-  }, false);
-
-  </script>
-</body>
-
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      document.addEventListener("gesturestart", function(e) {
+        e.preventDefault();
+      });
+      document.addEventListener(
+        "touchmove",
+        function(event) {
+          event = event.originalEvent || event;
+          if (event.scale > 1) {
+            event.preventDefault();
+          }
+        },
+        false
+      );
+    </script>
+  </body>
 </html>
