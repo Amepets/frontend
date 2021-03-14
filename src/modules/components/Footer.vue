@@ -63,6 +63,11 @@
                 src="../../assets/imgs/redesSociais/ic-facebook.svg"
             /></a>
           </div>
+          <div class="redes_sociais d-flex justify-center align-center ml-4">
+            <a href="https://www.linkedin.com/company/apauberlandia/" target="_blank">
+          <img class="mb-n2" src="../../assets/imgs/redesSociais/ic-linkedin.svg" />
+          </a>
+        </div>
         </div>
       </div>
 
@@ -93,6 +98,9 @@
               class="mb-n2"
               src="../../assets/imgs/redesSociais/ic-facebook.svg"
           /></a>
+        </div>
+        <div class="redes_sociais d-flex justify-center align-center mr-5">
+          <img src="../../assets/imgs/redesSociais/ic-linkedin.svg" />
         </div>
       </div>
     </div>
