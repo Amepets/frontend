@@ -82,7 +82,7 @@
               </div>
             </v-btn>
             <a
-              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20Gostaria%20de%20me%20voluntariar"
+              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20me%20voluntariar"
               target="_blank"
             >
               <v-btn
@@ -181,7 +181,7 @@
             elevation="2"
           >
             <a
-              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20Gostaria%20de%20me%20voluntariar"
+              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20me%20voluntariar"
               target="_blank"
             >
               <div class="button-wrapper">
@@ -219,7 +219,7 @@ import ModalDadosBancarios from "../../components/modais/DadosBancarios.vue";
 import ModalPontosColeta from "../../components/modais/PontosColeta.vue";
 
 @Component({
-  components: { AppBar, Footer, ModalDadosBancarios, ModalPontosColeta },
+  components: { AppBar, Footer, ModalDadosBancarios, ModalPontosColeta }
 })
 export default class Ajuda extends Vue {
   private isOpenDadosBancarios = false;

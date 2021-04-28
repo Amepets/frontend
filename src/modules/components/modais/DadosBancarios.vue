@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="showModal" persistent max-width="740px">
+  <v-dialog v-model="showModal" persistent max-width="750px">
     <v-card class="py-6 px-4" style="border-radius: 20px">
       <div>
         <v-flex class="d-flex align-start justify-space-between flex-row mb-4">
@@ -28,7 +28,7 @@
                 Banco do Brasil
               </p>
               <p class="font-weight-bold" style="color: #4f4e50">
-                CNPJ: 01.181.582/0001-12
+                CNPJ: 01.181.582/0001-12(PIX)
               </p>
               <p class="font-weight-bold" style="color: #4f4e50">
                 Agência: 0098-1
@@ -89,7 +89,7 @@ export default class ModalDadosBancarios extends Vue {
 
 <style lang="scss" scoped>
 .dados {
-  max-width: 344px;
+  max-width: 355px;
   width: 100%;
   background-color: #f5f5f5;
   border-radius: 10px;

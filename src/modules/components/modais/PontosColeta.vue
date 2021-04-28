@@ -9,7 +9,11 @@
           <v-icon size="30px" @click="toggleModal">mdi-close</v-icon>
         </v-flex>
         <v-flex class="d-flex justify-space-between flex-wrap">
-          <div class="dados d-flex align-center mb-5">
+          <div
+            v-for="(pontoColeta, index) in PontosColeta"
+            :key="index"
+            class="dados d-flex align-center mb-5"
+          >
             <div>
               <img
                 class="mr-3"
@@ -18,37 +22,9 @@
               />
             </div>
             <div>
-              <p class="font-weight-bold">Rua Clezio Migueleto 310</p>
-              <p class="font-weight-bold">Bairro Roosevelt</p>
-              <p class="font-weight-bold">(34) 99677 0358 - Elson</p>
-            </div>
-          </div>
-          <div class="dados d-flex align-center mb-5">
-            <div>
-              <img
-                class="mr-3"
-                width="32px"
-                src="../../../assets/imgs/icon-pontos-coleta.png"
-              />
-            </div>
-            <div>
-              <p class="font-weight-bold">Rua Sebastiao Rangel 692</p>
-              <p class="font-weight-bold">Santa Monica - antiga rua 31</p>
-              <p class="font-weight-bold">(34) 991037557 - Claudio</p>
-            </div>
-          </div>
-          <div class="dados d-flex align-center mb-5">
-            <div>
-              <img
-                class="mr-3"
-                width="32px"
-                src="../../../assets/imgs/icon-pontos-coleta.png"
-              />
-            </div>
-            <div>
-              <p class="font-weight-bold">Rua Angelica 137</p>
-              <p class="font-weight-bold">Bairro Cruzeiro Sul</p>
-              <p class="font-weight-bold">(34) 99975 2001 - Lilian</p>
+              <p class="font-weight-bold">{{ pontoColeta.endereco }}</p>
+              <p class="font-weight-bold">{{ pontoColeta.bairro }}</p>
+              <p class="font-weight-bold">{{ pontoColeta.contato }}</p>
             </div>
           </div>
         </v-flex>
@@ -63,6 +39,49 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 @Component({})
 export default class ModalPontosColeta extends Vue {
   @Prop({ required: true }) public showModal!: boolean;
+
+  private PontosColeta = [
+    {
+      endereco: "Rua Clésio Migueleto 310",
+      bairro: "Bairro Roosevelt",
+      contato: "(34) 99677-0358 - Elson"
+    },
+    {
+      endereco: "Rua  Sebastião Rangel 692",
+      bairro: "Bairro Santa Mônica",
+      contato: "(34) 99103-7557 - Cláudio"
+    },
+    {
+      endereco: "Rua Angelica 137",
+      bairro: "Bairro Cruzeiro do Sul",
+      contato: "(34) 99975 2001 - Lilian"
+    },
+    {
+      endereco: "Rua Eurico Adelino Mendes 30",
+      bairro: "Bairro São Jorge",
+      contato: "(34) 99654-7969 - Michel"
+    },
+    {
+      endereco: "Av. San Marino 510",
+      bairro: "Bairro Jardim Europa",
+      contato: "(34) 99174-3918 - Isis"
+    },
+    {
+      endereco: "Rua Aurora 67",
+      bairro: "Bairro Cruzeiro do Sul",
+      contato: "(34) 99147-5696 - Dalca"
+    },
+    {
+      endereco: "Rua dos Anturios 85",
+      bairro: "Bairro Cidade Jardim",
+      contato: "(34)  99218 8928 - 11h30 em diante - Iracema"
+    },
+    {
+      endereco: "Tapuios 1322",
+      bairro: "Bairro Saraiva - Distribuidora Ipérius Beer 24h",
+      contato: "(34) 99879-7900 - Cairo"
+    }
+  ];
 
   private toggleModal() {
     this.$emit("update:showModal", false);
