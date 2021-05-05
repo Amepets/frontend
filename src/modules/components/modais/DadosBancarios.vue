@@ -28,7 +28,7 @@
                 Banco do Brasil
               </p>
               <p class="font-weight-bold" style="color: #4f4e50">
-                CNPJ: 01.181.582/0001-12(PIX)
+                CNPJ: 01.181.582/0001-12
               </p>
               <p class="font-weight-bold" style="color: #4f4e50">
                 Agência: 0098-1
@@ -58,6 +58,51 @@
               </p>
               <p class="font-weight-bold" style="color: #4f4e50">
                 Operação: 03
+              </p>
+            </div>
+          </div>
+        </v-flex>
+        <v-flex
+          class="d-flex justify-space-between flex-wrap"
+          style="margin-top:10px"
+        >
+          <div
+            :class="
+              this.$vuetify.breakpoint.width < 768
+                ? 'dados d-flex align-center mb-3'
+                : 'dados d-flex align-center'
+            "
+          >
+            <div>
+              <img
+                class="mr-3"
+                width="32px"
+                src="../../../assets/imgs/icon-dados-bancarios.png"
+              />
+            </div>
+            <div>
+              <p class="font-weight-bold" style="color: #4f4e50">
+                Chave PIX
+              </p>
+              <p class="font-weight-bold" style="color: #4f4e50">
+                01.181.582/0001-12
+              </p>
+            </div>
+          </div>
+          <div class="dados d-flex align-center">
+            <div>
+              <img
+                class="mr-3"
+                width="32px"
+                src="../../../assets/imgs/icon-dados-bancarios.png"
+              />
+            </div>
+            <div>
+              <p class="font-weight-bold" style="color: #4f4e50">
+                Pic Pay
+              </p>
+              <p class="font-weight-bold" style="color: #4f4e50">
+                APA Uberlândia
               </p>
             </div>
           </div>

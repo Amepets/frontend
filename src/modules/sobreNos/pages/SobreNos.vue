@@ -22,7 +22,7 @@
               this.$vuetify.breakpoint.smAndDown ? 'text-center' : 'mr-12 mb-3'
             "
           >
-            Conheça a trajetória de {{data_formatada - 1996}} anos da APA 
+            Conheça a trajetória de {{ data_formatada - 1996 }} anos da APA
           </h1>
         </div>
         <img
@@ -70,8 +70,9 @@
             encontrados em condições inacreditáveis e desumanas. Além disso,
             nossas ações preventivas foram responsáveis pela castração em massa
             de mais de 300 animais domésticos somente no ano de 2013. Mesmo após
-            {{data_formatada - 1996}} anos de atuação, ainda há um longo caminho pela frente. Hoje, o
-            espaço abriga cerca de 500 cães e gatos, todos à procura de um lar.
+            {{ data_formatada - 1996 }} anos de atuação, ainda há um longo
+            caminho pela frente. Hoje, o espaço abriga cerca de 500 cães e
+            gatos, todos à procura de um lar.
             <br />
             <br />
             Para quem acredita que todos são dignos de amor, nos ajude a
@@ -95,13 +96,7 @@
             </v-btn>
           </router-link>
         </div>
-        <img
-          data-aos-anchor-placement="top-bottom"
-          data-aos="fade-left"
-          data-aos-duration="800"
-          :width="this.$vuetify.breakpoint.smAndDown ? '100%' : '50%'"
-          src="../../../assets/imgs/sobreNos/img-historia.png"
-        />
+
         <router-link to="ajuda">
           <v-btn
             data-aos-anchor-placement="top-bottom"
@@ -414,7 +409,6 @@ import Footer from "../../components/Footer.vue";
 
 @Component({ components: { AppBar, Footer } })
 export default class SobreNos extends Vue {
-
   private hoje = new Date();
 
   private data_formatada = this.hoje.getFullYear();
@@ -422,9 +416,6 @@ export default class SobreNos extends Vue {
   public created() {
     window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
   }
-
-  
-
 }
 </script>
 
