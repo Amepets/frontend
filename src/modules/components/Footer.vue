@@ -15,7 +15,7 @@
       >
         <div class="flex-grow-1">
           <p class="border-titulos font-weight-bold">Contatos</p>
-          <p>apauberlandia@gmail.com</p>
+          <p>diretoria@apauberlandia.org.br</p>
           <p>(34) 99677-0358</p>
         </div>
 
