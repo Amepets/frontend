@@ -82,7 +82,7 @@
               </div>
             </v-btn>
             <a
-              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20me%20voluntariar"
+              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20ser%20voluntario%20na%20APA%20Uberlandia"
               target="_blank"
             >
               <v-btn
@@ -113,7 +113,7 @@
             
           </div>
           <a v-if="!this.$vuetify.breakpoint.smAndDown"
-              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20quero%20apadrinhar%20um%20animal%20da%20APA%20Uberlândia"
+              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20quero%20apadrinhar%20um%20animal%20da%20APA%20Uberlândia"
               target="_blank"
             >
               <v-btn
@@ -143,7 +143,7 @@
             </a>
             <a
             v-if="!this.$vuetify.breakpoint.smAndDown"
-              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20quero%20ser%20parceiro%20da%20APA%20Uberlândia"
+              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20quero%20ser%20parceiro%20da%20APA%20Uberlândia"
               target="_blank"
             >
               <v-btn
@@ -241,7 +241,7 @@
             elevation="2"
           >
             <a
-              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20me%20voluntariar"
+              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20ser%20voluntario%20na%20APA%20Uberlandia"
               target="_blank"
             >
               <div class="button-wrapper">
@@ -272,7 +272,7 @@
             elevation="2"
           >
             <a
-              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20quero%20apadrinhar%20um%20animal%20da%20APA%20Uberlândia"
+              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20quero%20apadrinhar%20um%20animal%20da%20APA%20Uberlândia"
               target="_blank"
             >
               <div class="button-wrapper">
@@ -299,7 +299,7 @@
             elevation="2"
           >
             <a
-              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20quero%20ser%20parceiro%20da%20APA%20Uberlândia"
+              href="https://api.whatsapp.com/send?phone=5534996770358&text=Ol%C3%A1,%20quero%20ser%20parceiro%20da%20APA%20Uberlândia"
               target="_blank"
             >
               <div class="button-wrapper">

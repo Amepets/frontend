@@ -3,11 +3,13 @@
     <v-card class="py-6 px-4" style="border-radius: 20px">
       <div>
         <v-flex class="d-flex align-start justify-space-between flex-row mb-4">
-          <h1 class="font-weight-bold" style="font-size: 40px">
+          <div>
+            <h1 class="font-weight-bold" style="font-size: 40px">
             Dados bancários
-            <br>
-            <span style="font-size: 20px">Razão Social: Associação de Proteção Animal</span>
           </h1>
+          <p class="font-weight-bold" style="font-size: 20px">Razão Social: Associação de Proteção Animal</p>
+          <p class="font-weight-bold" style="font-size: 20px">CNPJ: 01.181.582/0001-12</p>
+          </div>
           <v-icon size="30px" @click="toggleModal">mdi-close</v-icon>
         </v-flex>
         <v-flex class="d-flex justify-space-between flex-wrap">
@@ -28,9 +30,6 @@
             <div>
               <p class="font-weight-bold" style="color: #4f4e50">
                 Banco do Brasil
-              </p>
-              <p class="font-weight-bold" style="color: #4f4e50">
-                CNPJ: 01.181.582/0001-12
               </p>
               <p class="font-weight-bold" style="color: #4f4e50">
                 Agência: 0098-1
