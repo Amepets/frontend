@@ -5,6 +5,8 @@
         <v-flex class="d-flex align-start justify-space-between flex-row mb-4">
           <h1 class="font-weight-bold" style="font-size: 40px">
             Dados bancários
+            <br>
+            <span style="font-size: 20px">Razão Social: Associação de Proteção Animal</span>
           </h1>
           <v-icon size="30px" @click="toggleModal">mdi-close</v-icon>
         </v-flex>

@@ -73,11 +73,11 @@
             >
               <div class="button-wrapper">
                 <img
-                  width="24px"
+                  width="20px"
                   class="mb-2"
-                  src="../../../assets/imgs/ajuda/ic-donation-medicine.svg"
+                  src="../../../assets/imgs/ajuda/racao-para-animais.png"
                 />
-                <p style="font-weight: 600;">Remédios e</p>
+                <p style="font-weight: 600;">Doação de</p>
                 <p style="font-weight: 600;">Produtos</p>
               </div>
             </v-btn>
@@ -103,14 +103,74 @@
                   <img
                     width="24px"
                     class="mb-2"
-                    src="../../../assets/imgs/ajuda/ic-voluntery.svg"
+                    src="../../../assets/imgs/ajuda/ic-donation-medicine.svg"
                   />
                   <p style="font-weight: 600;">Tornar-se</p>
                   <p style="font-weight: 600;">Voluntário</p>
                 </div>
               </v-btn>
             </a>
+            
           </div>
+          <a v-if="!this.$vuetify.breakpoint.smAndDown"
+              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20Apadrinhar"
+              target="_blank"
+            >
+              <v-btn
+                data-aos-anchor-placement="top-bottom"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                style="padding: 5px; border-radius: 10px; margin: 5px"
+                min-height="79px"
+                max-width="121px"
+                width="141px"
+                height="99px"
+                class="mt-4"
+                x-small
+                color="#ffffff"
+                elevation="2"
+              >
+                <div class="button-wrapper">
+                  <img
+                    width="24px"
+                    class="mb-2"
+                    src="../../../assets/imgs/ajuda/ic-voluntery.svg"
+                  />
+                  <p style="font-weight: 600;">Quero</p>
+                  <p style="font-weight: 600;">Apadrinhar</p>
+                </div>
+              </v-btn>
+            </a>
+            <a
+            v-if="!this.$vuetify.breakpoint.smAndDown"
+              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20fazer%20uma%20parceria"
+              target="_blank"
+            >
+              <v-btn
+                data-aos-anchor-placement="top-bottom"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                style="padding: 5px; border-radius: 10px; margin: 5px"
+                min-height="79px"
+                max-width="121px"
+                width="141px"
+                height="99px"
+                class="mt-4"
+                x-small
+                color="#ffffff"
+                elevation="2"
+              >
+                <div class="button-wrapper">
+                  <img
+                    width="24px"
+                    class="mb-2"
+                    src="../../../assets/imgs/ajuda/group.png"
+                  />
+                  <p style="font-weight: 600;">Empresa</p>
+                  <p style="font-weight: 600;">Parceira</p>
+                </div>
+              </v-btn>
+            </a>
         </div>
         <img
           data-aos-anchor-placement="top-bottom"
@@ -160,11 +220,11 @@
           >
             <div class="button-wrapper">
               <img
-                width="24px"
+                width="20px"
                 class="mb-2"
-                src="../../../assets/imgs/ajuda/ic-donation-medicine.svg"
+                src="../../../assets/imgs/ajuda/racao-para-animais.png"
               />
-              <p style="font-weight: 600;">Remédios e</p>
+              <p style="font-weight: 600;">Doação de</p>
               <p style="font-weight: 600;">Produtos</p>
             </div>
           </v-btn>
@@ -188,7 +248,7 @@
                 <img
                   width="24px"
                   class="mb-2"
-                  src="../../../assets/imgs/ajuda/ic-voluntery.svg"
+                  src="../../../assets/imgs/ajuda/ic-donation-medicine.svg"
                 />
                 <p style="font-weight: 600;">Tornar-se</p>
                 <p style="font-weight: 600;">Voluntário</p>
@@ -197,6 +257,63 @@
             </a>
           </v-btn>
         </div>
+        <div v-if="this.$vuetify.breakpoint.smAndDown"
+          style="justify-content=space-around"
+          class="d-flex flex-row botoes">
+          <v-btn
+            style="padding: 5px; border-radius: 10px; margin: 5px; width: 30%"
+            min-height="79px"
+            max-width="121px"
+            class="mt-4 alinhamento-botao"
+            width="141px"
+            height="99px"
+            x-small
+            color="#ffffff"
+            elevation="2"
+          >
+            <a
+              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20Apadrinhar"
+              target="_blank"
+            >
+              <div class="button-wrapper">
+                <img
+                  width="24px"
+                  class="mb-2"
+                  src="../../../assets/imgs/ajuda/ic-voluntery.svg"
+                />
+                <p style="font-weight: 600;">Quero</p>
+                <p style="font-weight: 600;">Apadrinhar</p>
+                <p></p>
+              </div>
+            </a>
+          </v-btn>
+          <v-btn
+            style="padding: 5px; border-radius: 10px; margin: 5px; width: 30%"
+            min-height="79px"
+            max-width="121px"
+            class="mt-4 alinhamento-botao"
+            width="141px"
+            height="99px"
+            x-small
+            color="#ffffff"
+            elevation="2"
+          >
+            <a
+              href="https://api.whatsapp.com/send?phone=5534996547969&text=Ol%C3%A1,%20Gostaria%20de%20fazer%20uma%20parceria"
+              target="_blank"
+            >
+              <div class="button-wrapper">
+                <img
+                  width="24px"
+                  class="mb-2"
+                  src="../../../assets/imgs/ajuda/group.png"
+                />
+                <p style="font-weight: 600;">Empresa</p>
+                <p style="font-weight: 600;">Parceira</p>
+                <p></p>
+              </div>
+            </a>
+          </v-btn></div>
       </div>
     </v-flex>
     <ModalDadosBancarios
