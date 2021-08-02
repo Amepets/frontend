@@ -514,6 +514,12 @@
             height="100px"
             src="../../../assets/imgs/parceiros/client-farmacia-confiaca.jpg"
           />
+          <img
+            class="mx-2 my-2"
+            width="200px"
+            height="100px"
+            src="../../../assets/imgs/parceiros/client-emporio-terra-brasil.png"
+          />
         </div>
       </div>
     </v-flex>
